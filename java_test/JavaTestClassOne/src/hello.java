@@ -4,7 +4,7 @@ public class hello {
         this.PersonName = name;
     }
     void Sayhello(){
-        System.out.println("hello world!\nI'm ");
+        System.out.print("hello world!\nI'm ");
         System.out.println(this.PersonName);
     }
 }
