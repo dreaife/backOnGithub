@@ -5,7 +5,7 @@ using namespace std;
 typedef long long ll;
 //const int N=1e5+10;
 //int q[N];
-//string s;
+//string s
 void solve(){
     int l,r;
     cin>>l>>r;
