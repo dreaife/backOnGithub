@@ -1,6 +1,7 @@
+
 public class App {
-    public static void main(String[] args) throws Exception {
-        hello one = new hello("dreaife") ;
-        one.Sayhello();
+    public static void main(String[] args) {
+        hello A = new hello("dreaife");
+        if(A instanceof hello) A.Sayhello();
     }
 }
