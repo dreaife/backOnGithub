@@ -7,7 +7,7 @@ typedef long long ll;
 const int N=2e5+10;
 int a[N],x,y,n,sum;
 //string s;
-void solve(){
+void solve(){ 
     cin>>x>>y;
     int l=0,r=n-1;
     while(l<r){
