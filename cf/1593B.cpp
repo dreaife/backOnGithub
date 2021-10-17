@@ -15,10 +15,11 @@ void solve(){
         a /= 10ll;
         cout<<s<<endl;
     }
-    int p1=1,p2=1;
-    while(s[p1]!='0') p1++;p2=p1+1;
-    while(s[p2]!='0'&&s[p2]!='5') p2++;
-    //cout<<p1<<' '<<p2<<endl;
+    int p0=1,p2=1,p5=1,p7=1;
+    while(s[p0]!='0') p0++;
+    while(s[p5]!='5') p5++;p7 = p5;
+    while(s[p7]!='7') p7++;
+
     cout<<p2-1<<endl;
 }
 int main(){
