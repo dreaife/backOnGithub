@@ -3,13 +3,19 @@
 #include<cstring>
 using namespace std;
 typedef long long ll;
-const int N=110;
-int n,q[N],n0,n1;
+//const int N=1e5+10;
+//int q[N];
 //string s;
+ll n,ans,n0;
 void solve(){
-    cin>>n;n0=0,n1=0;
-    for(int i=0;i<n;i++) {cin>>a[i];if(a[i]%2) n1++;else n0++;}
-    
+    cin>>n;n0=0;ans=0;
+    for(int i=0,t;i<n;i++){
+        cin >> t;
+        if(!t) n0++;
+        if(t==1) ans++;
+    }
+    ans *= 1ll<<n0;
+    cout<<ans<<endl;
 }
 int main(){
     ios::sync_with_stdio(false);cin.tie(0);cout.tie(0);
