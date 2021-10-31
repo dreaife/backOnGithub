@@ -8,7 +8,7 @@ typedef long long ll;
 //int n;
 //string s;
 void solve(){
-    
+
 }
 int main(){
     ios::sync_with_stdio(false);
