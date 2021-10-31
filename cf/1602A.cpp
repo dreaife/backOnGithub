@@ -6,14 +6,13 @@ typedef long long ll;
 //const int N=1e5+10;
 //int q[N];
 string s;
-int n,ans;
+int m;
+int k;
 void solve(){
-    cin>>n>>s;ans=0;
-    for(int i=0;i<n;i++){
-        ans+=s[i]-'0';
-        if(s[i]!='0') ans++;
-    }if(s[n-1]!='0') ans--;
-    cout<<ans<<endl;
+    cin>>s;k=0;m = 133;
+        for(int i=0;i<s.length();i++) if(s[i]<m) m=s[i],k=i;
+        cout<<s[k]<<' ';
+        for(int i=0;i<s.length();i++) if(i!=k) cout<<s[i];cout<<endl;
 }
 int main(){
     ios::sync_with_stdio(false);cin.tie(0);cout.tie(0);
