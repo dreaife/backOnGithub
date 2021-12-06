@@ -162,3 +162,137 @@ CREATE UNIQUE INDEX TCI ON TL("TNUM")
 SELECT * FROM all_indexes WHERE table_name = 'T'
 
 DROP INDEX TI;DROP INDEX TCI;
+
+
+
+
+CREATE DATABASE StudentTest;
+
+CREATE TABLE Student          
+	   (Sno   CHAR(9) constraint pk_st_sno PRIMARY KEY, /* 列级完整性约束条件*/                  
+            Sname  VARCHAR(40) constraint un_st_sn UNIQUE,     /* Sname取唯一值*/
+            Ssex    CHAR(3),
+            Sage   tinyINT,  /*smallint */
+            Sdept  VARCHAR(20)
+          ); 
+
+
+CREATE TABLE  Course
+              (Cno   CHAR(4) constraint co_pk_cno PRIMARY KEY,
+               Cname  VARCHAR(40),            
+               Cpno   CHAR(4) ,               	                      
+               Ccredit  tinyINT,  /* Ccredit */
+               constraint fk_cpno FOREIGN KEY (Cpno) REFERENCES  Course (Cno)    /*cpno 加()  */
+           ); 
+           
+CREATE TABLE  SC
+       	(Sno  CHAR(9), 
+       	Cno  CHAR(4),  
+       	Grade tinyINT,   /* SMALLINT */
+       	constraint pk_sno_cno PRIMARY KEY (Sno,Cno),  
+                     /* 主码由两个属性构成,必须作为表级完整性进行定义*/
+       	constraint fk_sno FOREIGN KEY (Sno) REFERENCES Student(Sno),
+                    /* 表级完整性约束条件,Sno是外码,被参照表是Student */
+       	constraint fk_cno FOREIGN KEY (Cno) REFERENCES Course(Cno)
+                   /* 表级完整性约束条件, Cno是外码,被参照表是Course*/
+		); 
+
+insert into student (Sno,Sname, Ssex,Sdept,Sage)
+       values('201215128','陈冬','男','IS',18);  
+insert into student (Sno,Sname, Ssex,Sdept,Sage)
+       values('201215121','李勇','男','CS',20);
+insert into student (Sno,Sname, Ssex,Sage,Sdept)
+       values('201215122','刘晨','女',19,'CS') ;
+insert into student 
+       values('201215123','王敏','女',18,'MA') ;
+insert into student 
+       values('201215125','张立','男',19,'IS');
+
+insert into Course
+    values('2','数学',null,2);
+insert into Course 
+       values('6','数据处理',null,2);
+insert into Course 
+       values('4','操作系统','6',3);
+insert INTO Course 
+       values('7','PASCAL语言','6',4);
+insert into Course 
+       values('5','数据结构','7',4);
+insert into Course 
+       values('1','数据库','5',4);
+insert into  Course 
+       values('3','信息系统','1',4);
+
+insert into SC
+       values('201215121','1',92);
+insert into SC
+       values ('201215121','2',85);
+insert into SC
+       values ('201215121','3',88);
+insert into  SC
+       values('201215122','2',90);
+insert into  SC
+       values('201215122','3',80);
+
+CREATE
+    USER U1 CONNECTION LIMIT - 1 PASSWORD 'rjXY1234!';
+
+select * from sys_user WHERE USENAME LIKE 'U_' ORDER BY USENAME;
+
+GRANT SELECT
+    ON
+    TABLE
+        "PUBLIC"."STUDENT" TO "U1";
+
+GRANT SELECT ON TABLE
+	"PUBLIC"."STUDENT","PUBLIC"."COURSE" TO "U2" WITH GRANT OPTION;
+	
+GRANT SELECT ON TABLE
+	"PUBLIC"."STUDENT","PUBLIC"."COURSE" TO "U3" WITH GRANT OPTION;
+
+GRANT SELECT ON TABLE "PUBLIC"."SC" TO "U3" WITH GRANT OPTION;
+GRANT INSERT ON TABLE "PUBLIC"."SC" TO "U3" WITH GRANT OPTION;
+GRANT UPDATE ON TABLE "PUBLIC"."SC" TO "U3" WITH GRANT OPTION;
+GRANT DELETE ON TABLE "PUBLIC"."SC" TO "U3" WITH GRANT OPTION;
+GRANT TRUNCATE ON TABLE "PUBLIC"."SC" TO "U3" WITH GRANT OPTION;
+GRANT REFERENCES ON TABLE "PUBLIC"."SC" TO "U3" WITH GRANT OPTION;
+GRANT TRIGGER ON TABLE "PUBLIC"."SC" TO "U3" WITH GRANT OPTION;
+
+GRANT ALL ON TABLE "PUBLIC"."SC" TO "U3" WITH GRANT OPTION;
+
+GRANT SELECT,UPDATE("SNO") ON TABLE "STUDENT" TO U4;
+
+INSERT INTO "STUDENT" VALUES('1','何','男',20,'软件');
+UPDATE "STUDENT" SET SNO = '202011211' WHERE SNAME = '何';
+
+GRANT SELECT ON TABLE SC TO U5 WITH GRANT OPTION;
+
+GRANT insert ON TABLE SC TO U5 WITH GRANT OPTION;
+
+GRANT insert ON TABLE SC TO U7 WITH GRANT OPTION;
+GRANT insert ON TABLE SC TO U2 WITH GRANT OPTION;
+
+REVOKE UPDATE ON TABLE Student FROM U4;
+
+REVOKE SELECT ON TABLE SC FROM "PUBLIC";
+
+REVOKE INSERT ON TABLE SC FROM U5;
+
+CREATE ROLE R1;
+GRANT SELECT,UPDATE,INSERT ON TABLE student TO R1;
+GRANT R1 TO U7;
+INSERT INTO student VALUES('he','gs',12);
+REVOKE R1 FROM U7;
+
+GRANT DELETE ON TABLE student TO R1;
+GRANT R1 TO U7;
+DELETE FROM student WHERE sname = 'gs';
+
+REVOKE SELECT ON TABLE student FROM R1;
+SELECT * FROM student;
+
+REVOKE ALL ON TABLE student FROM R1;
+DROP ROLE "R1";
+
+DROP DATABASE studenttest;
+
