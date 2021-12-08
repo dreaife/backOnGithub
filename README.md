@@ -6,6 +6,6 @@ using for daily codes back
 
 欢迎各位来我的[博客][1]游玩
 
-![shinku](https://raw.githubusercontent.com/dreaife/PictureOfDreaife/main/picture/Shinku.jpg?token=ARNBM5A2JGGKRI4EEXKS3ILBFTBJ2 "真红我老婆！")
+![](https://raw.githubusercontent.com/dreaife/PictureOfDreaife/main/picture/202112081934117.png?token=ARNBM5A3DSFCXVTSJMP3NT3BWCMII)
 
 [1]: http://dreaife.cc/
