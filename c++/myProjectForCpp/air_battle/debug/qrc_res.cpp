@@ -6,124 +6,124 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-  // D:/LearningNotes/myProjectForCpp/air_battle/res/bomb-6.png
+  // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bomb-6.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/bomb-7.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bomb-7.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/bullet_5.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bullet_5.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/img-plane_2.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/img-plane_2.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/res.qrc
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/res.qrc
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/bomb-4.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bomb-4.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/bullet_2.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bullet_2.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/bullet_12.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bullet_12.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/hero.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/hero.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/hero_bullet_7.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/hero_bullet_7.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/img-plane_1.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/img-plane_1.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/img_bg_level_4.jpg
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/img_bg_level_4.jpg
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/img_bg_level_3.jpg
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/img_bg_level_3.jpg
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/img-plane_6.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/img-plane_6.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/img-plane_5.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/img-plane_5.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/app.ico
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/app.ico
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/img-plane_4.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/img-plane_4.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/bullet_10.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bullet_10.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/game.ico
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/game.ico
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/img_bg_level_5.jpg
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/img_bg_level_5.jpg
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/bullet_14.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bullet_14.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/bullet_11.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bullet_11.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/FAVORITE.ico
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/FAVORITE.ico
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/img_bg_level_1.jpg
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/img_bg_level_1.jpg
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/img-plane_7.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/img-plane_7.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/bullet_3.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bullet_3.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/img_bg_level_2.jpg
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/img_bg_level_2.jpg
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/bomb-5.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bomb-5.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/bomb-1.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bomb-1.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/bullet_1.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bullet_1.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/bomb-3.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bomb-3.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/bullet_6.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bullet_6.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/bullet_13.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bullet_13.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/bomb-2.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bomb-2.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/bullet_4.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bullet_4.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/bullet_9.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bullet_9.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/img-plane_3.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/img-plane_3.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/bullet_8.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bullet_8.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/hero2.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/hero2.png
   
   
-    // D:/LearningNotes/myProjectForCpp/air_battle/res/bullet_7.png
+    // D:/codeS/backOnGithub/c++/myProjectForCpp/air_battle/res/bullet_7.png
   
   
   

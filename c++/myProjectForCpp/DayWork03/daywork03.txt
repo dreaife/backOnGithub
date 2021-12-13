@@ -1,0 +1,7 @@
+<details>
+<summary>展开</summary>
+<font size = "5" ><strong>
+<pre><a href = "//www.bilibili.com/" target="_blank">bilibili</a>   <a href = "//bbs.9shenmi.com/" target="_blank">kfol</a>   <a href = "//github.com/" target="_blank">gitHub</a>
+<a href = "//www.acwing.com/" target="_blank">acWing</a>   <a href = "//bangumi.tv/" target="_blank">bangumi</a>   <a href = "//galge.fun/" target="_blank">2DFan</a></pre>
+</strong></font>
+</details>
