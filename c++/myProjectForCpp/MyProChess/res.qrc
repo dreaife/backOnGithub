@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/black.png</file>
+        <file>res/FAVORITE.ico</file>
+        <file>res/virtualPoint.png</file>
+        <file>res/white.png</file>
+        <file>sound/clock.wav</file>
+        <file>sound/press.wav</file>
+        <file>sound/start.wav</file>
+        <file>sound/win.wav</file>
+        <file>res/chessBored.jpg</file>
+        <file>res/bg.jpg</file>
+        <file>res/backGround5.png</file>
+        <file>res/bg.png</file>
+    </qresource>
+</RCC>

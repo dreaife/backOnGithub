@@ -1,0 +1,14 @@
+INPUT(
+./release\main.o
+./release\widget.o
+./release\map.o
+./release\airplane.o
+./release\bullet.o
+./release\enemy.o
+./release\bomb.o
+./release\enemybullet.o
+./release\start.o
+./release\qrc_res.o
+./release\moc_widget.o
+./release\moc_start.o
+);

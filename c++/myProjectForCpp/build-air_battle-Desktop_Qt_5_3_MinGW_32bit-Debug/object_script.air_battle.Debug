@@ -1,0 +1,14 @@
+INPUT(
+./debug\main.o
+./debug\widget.o
+./debug\map.o
+./debug\airplane.o
+./debug\bullet.o
+./debug\enemy.o
+./debug\bomb.o
+./debug\enemybullet.o
+./debug\start.o
+./debug\qrc_res.o
+./debug\moc_widget.o
+./debug\moc_start.o
+);

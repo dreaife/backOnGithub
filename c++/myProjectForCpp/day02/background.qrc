@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/graph">
+        <file>C:/Users/Administrator/Pictures/屏幕/AAF_HappyBirthday_1920x1080.png</file>
+        <file>C:/Users/Administrator/Pictures/屏幕/AAF_main_1920x1080.png</file>
+        <file>C:/Users/Administrator/Pictures/屏幕/BG1.jpg</file>
+        <file>C:/Users/Administrator/Pictures/屏幕/BG2.jpg</file>
+        <file>C:/Users/Administrator/Pictures/屏幕/BG3.jpg</file>
+        <file>C:/Users/Administrator/Pictures/屏幕/BG5.jpg</file>
+        <file>C:/Users/Administrator/Pictures/屏幕/exResult2_1_1280.jpg</file>
+        <file>C:/Users/Administrator/Pictures/屏幕/exResult3_A_1280.jpg</file>
+        <file>C:/Users/Administrator/Pictures/屏幕/exResult3_B_1280.jpg</file>
+        <file>C:/Users/Administrator/Pictures/屏幕/exResult3_S_1280.jpg</file>
+        <file>C:/Users/Administrator/Pictures/屏幕/exResult3_SSS_1280.jpg</file>
+        <file>C:/Users/Administrator/Pictures/屏幕/leyline_SSS1280_800.jpg</file>
+        <file>C:/Users/Administrator/Pictures/屏幕/Shinku.jpg</file>
+        <file>C:/Users/Administrator/Pictures/屏幕/Shinku.png</file>
+        <file>C:/Users/Administrator/Pictures/屏幕/sub009a.png</file>
+        <file>C:/Users/Administrator/Pictures/屏幕/sum005bL.png</file>
+        <file>C:/Users/Administrator/Pictures/屏幕/win016a.png</file>
+    </qresource>
+</RCC>

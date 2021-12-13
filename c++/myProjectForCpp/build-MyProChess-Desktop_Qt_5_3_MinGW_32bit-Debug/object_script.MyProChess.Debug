@@ -1,0 +1,15 @@
+INPUT(
+./debug\main.o
+./debug\widget.o
+./debug\login.o
+./debug\chessbored.o
+./debug\chess.o
+./debug\robot.o
+./debug\register.o
+./debug\qrc_res.o
+./debug\moc_widget.o
+./debug\moc_login.o
+./debug\moc_chessbored.o
+./debug\moc_robot.o
+./debug\moc_register.o
+);

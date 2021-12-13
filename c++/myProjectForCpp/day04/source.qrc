@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/add">
+        <file alias="runa.jpg">F:/osu/Screenshots/screenshot022.jpg</file>
+    </qresource>
+</RCC>

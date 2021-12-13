@@ -1,0 +1,15 @@
+INPUT(
+./release\main.o
+./release\widget.o
+./release\login.o
+./release\chessbored.o
+./release\chess.o
+./release\robot.o
+./release\register.o
+./release\qrc_res.o
+./release\moc_widget.o
+./release\moc_login.o
+./release\moc_chessbored.o
+./release\moc_robot.o
+./release\moc_register.o
+);
