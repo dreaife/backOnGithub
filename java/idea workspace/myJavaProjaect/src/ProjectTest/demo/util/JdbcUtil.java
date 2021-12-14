@@ -1,21 +1,19 @@
-package grade02Class.dreaife.day03;
+package ProjectTest.demo.util;
 
+import grade02Class.dreaife.day03.jdbcToolsUpdate;
 import org.apache.commons.dbcp.BasicDataSource;
-import org.apache.commons.dbcp.DelegatingResultSet;
 
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
-public class jdbcToolsUpdate {
-
+public class JdbcUtil {
     private  static BasicDataSource dataSource = new BasicDataSource();
 
-    private jdbcToolsUpdate(){}
+    private JdbcUtil(){}
 
-    static{
+    static {
 
         Properties prop = new Properties();
         try {
@@ -43,36 +41,19 @@ public class jdbcToolsUpdate {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-//        try {
-//            System.out.println("加载连接");
-//            Class.forName(driverClass);
-//        } catch (ClassNotFoundException e) {
-//            e.printStackTrace();
-//        }
     }
 
     public static Connection getConn() throws SQLException {
-        Connection conn =  dataSource.getConnection();
-        return conn;
+            Connection conn = null;
+            conn = dataSource.getConnection();
+            return conn;
     }
 
     public static void closeConn(Connection conn){
-        if(conn != null){
-            try {
+        if(conn != null) try {
                 conn.close();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-        }
-    }
-
-    public static void main(String[] args) {
-        try {
-            System.out.println(getConn());
-            System.out.println(getConn());
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
     }
 }

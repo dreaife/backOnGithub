@@ -149,4 +149,20 @@ stmt.setString(2,password);
 > 
 > DBCP C3P0
 > 
+> ```
+> private  static BasicDataSource dataSource = new BasicDataSource();
+> 
+>       dataSource.setDriverClassName(driverClass);
+>       dataSource.setUrl(url);
+>       dataSource.setUsername(user);
+>       dataSource.setPassword(password);
+> 
+>       dataSource.setInitialSize(initialSize);
+>       dataSource.setMaxActive(maxActive);
+>       dataSource.setMaxWait(maxWait);//最大等待时间
+>       dataSource.setMaxIdle(maxIdle);//最大空闲数
+> 
+>       Connection conn =  dataSource.getConnection();
+> ```
+> 
 > 
