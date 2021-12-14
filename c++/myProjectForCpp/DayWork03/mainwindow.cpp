@@ -60,6 +60,7 @@ void MainWindow::saveFileAction(){
         stream.autoDetectUnicode();
         stream<<context;
         stream.flush();
+//        file.open(&context.toUtf8());
         file.close();
     }
 }
