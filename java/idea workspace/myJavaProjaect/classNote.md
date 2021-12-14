@@ -84,3 +84,60 @@ stmt.setString(2,password);
 先对pstmt输入要预编译的SQL语句，对于需要更改替换的地方用`?`来作为占位符使用。
 
 然后再用`pstmt.setString(index,sql)`来对其进行更改以此进行对SQL语句的预处理。
+
+# day03
+
+1. jdbc工具类管理
+
+> - 加载驱动
+> ```
+>     public static void loadDriver(){
+>         try {
+>             Class.forName(driverClass);
+>         } catch (ClassNotFoundException e) {
+>             e.printStackTrace();
+>         }
+>     }
+> ```
+> - 创建连接
+> ```
+>    public static Connection getConn() throws SQLException {
+>         Connection conn = null;
+>         conn = DriverManager.getConnection(url,user,password);
+>         return conn;
+>     }
+> ```
+> - 关闭连接
+> ```
+>     public static void closeConn(Connection conn){
+>         if(conn != null){
+>             try {
+>                 conn.close();
+>             } catch (SQLException e) {
+>                 e.printStackTrace();
+>             }
+>         }
+>     }
+> ```
+> ***注意，可以使用`private jdbcTools(){}`使该类不能实例化，从而使其调用静态成员函数***
+> 
+> ==========================================
+> 
+> - 属性文件*.properties
+> 
+> 内容：key=value;
+> 
+> 类 properties 获取属性文件的键值对
+>
+> ```
+>     Properties prop = new Properties();
+>         try {
+>             prop.load(jdbcTools.class.getClassLoader().getResourceAsStream("db.properties"));
+>             driverClass = prop.getProperty("jdbc.driverClass");
+>             url = prop.getProperty("jdbc.url");
+>             user = prop.getProperty("jdbc.user");
+>             password = prop.getProperty("jdbc.password");
+>         } catch (IOException e) {
+>             e.printStackTrace();
+>         }
+> ```
