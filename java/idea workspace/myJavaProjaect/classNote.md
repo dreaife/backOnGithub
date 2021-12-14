@@ -91,7 +91,7 @@ stmt.setString(2,password);
 
 > - 加载驱动
 > ```
->     public static void loadDriver(){
+>     static{
 >         try {
 >             Class.forName(driverClass);
 >         } catch (ClassNotFoundException e) {
@@ -127,6 +127,8 @@ stmt.setString(2,password);
 > 
 > 内容：key=value;
 > 
+> ***注意！！！该文件需放到src文件夹下，或将所在文件夹设置为sources root，否则无法找到。***
+> 
 > 类 properties 获取属性文件的键值对
 >
 > ```
@@ -141,3 +143,10 @@ stmt.setString(2,password);
 >             e.printStackTrace();
 >         }
 > ```
+> 
+> - 池化技术/连接池解决大量连接
+> (单例)
+> 
+> DBCP C3P0
+> 
+> 
