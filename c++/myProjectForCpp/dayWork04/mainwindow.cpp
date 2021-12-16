@@ -6,50 +6,39 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    text = new QLabel;
+    text = new QPlainTextEdit();
     this->setCentralWidget(text);
-    this->installEventFilter(this);
+    this->text->installEventFilter(this);
 }
 
 void MainWindow::mouseMoveEvent(QMouseEvent *event)
 {
-    text->clear();
-text->setText(QString("<center><h1>Move: (%1, %2)</h1></center>").arg(QString::number(event->x()),
-            QString::number(event->y())));
+    qDebug()<<"Move: ("<<event->x()<<","<<event->y()<<")\n";
 }
-s
 void MainWindow::mousePressEvent(QMouseEvent *event)
 {
-    text->clear();
-    text->setText(QString("<center><h1>Press:(%1, %2)</h1></center>").arg(QString::number(event->x()),
-                QString::number(event->y())));
+    qDebug()<<"Press: ("<<event->x()<<","<<event->y()<<")\n";
 }
 
 void MainWindow::keyPressEvent(QKeyEvent *event)
 {
-    QString msg;
-    text->clear();
-    msg.push_back(QString("<center><h1>You press %1.</h1></center>").arg(event->key()));
-    text->setText(msg);
+    qDebug()<<"You press : "<<event->key()<<")\n";
 }
 
 bool MainWindow::event(QEvent *event){
     if(event->type() == QEvent::KeyPress){
         QKeyEvent* key = static_cast<QKeyEvent*>(event);
         if(key->key() == Qt::Key_Space){
-            text->clear();
-             text->setText(QString("<center><h1>You press  EVENT space.</h1></center>"));
+             qDebug()<<"You press EVENT : "<<key->key()<<"\n";
              return true;
         }
     }else if(event->type() == QEvent::MouseButtonPress){
         QMouseEvent *mouse = static_cast<QMouseEvent*> (event);
         if(mouse->button() == Qt::LeftButton){
-            text->clear();
-             text->setText(QString("<center><h1>Press EVENT Left Button  (%1, %2)</h1></center>").arg(mouse->x()).arg(mouse->y()));
+            qDebug()<<"Press EVENT Left Button :( "<<mouse->x()<<","<<mouse->y()<<")\n";
                      return true;
         }else  if(mouse->button() == Qt::RightButton){
-            text->clear();
-            text->setText(QString("<center><h1>Press EVENT Right Button  (%1, %2)</h1></center>").arg(mouse->x()).arg(mouse->y()));
+            qDebug()<<"Press EVENT Right Button :( "<<mouse->x()<<","<<mouse->y()<<")\n";
                     return true;
     }
         return MainWindow::event(event);
@@ -61,19 +50,16 @@ bool MainWindow::eventFilter(QObject *watched, QEvent *event){
         if(event->type() == QEvent::KeyPress){
             QKeyEvent* key = static_cast<QKeyEvent*>(event);
             if(key->key() == Qt::Key_Space){
-                text->clear();
-                 text->setText(QString("<center><h1>You press  EVENTILTER space.</h1></center>"));
-                 return false;
+                 qDebug()<<"You press EVENTILTER :  SPACE \n";
+                 return true;
             }
         }else if(event->type() == QEvent::MouseButtonPress){
             QMouseEvent *mouse = static_cast<QMouseEvent*> (event);
             if(mouse->button() == Qt::LeftButton){
-                text->clear();
-                 text->setText(QString("<center><h1>Press EVENTILTER Left Button  (%1, %2)</h1></center>").arg(mouse->x()).arg(mouse->y()));
+                 qDebug()<<"Press EVENTILTER Left Button :( "<<mouse->x()<<","<<mouse->y()<<")\n";
                          return true;
             }else  if(mouse->button() == Qt::RightButton){
-                text->clear();
-                text->setText(QString("<center><h1>Press EVENTILTER Right Button  (%1, %2)</h1></center>").arg(mouse->x()).arg(mouse->y()));
+                qDebug()<<"Press EVENTILTER Right Button :( "<<mouse->x()<<","<<mouse->y()<<")\n";
                         return true;
         }
             return MainWindow::eventFilter(watched,event);

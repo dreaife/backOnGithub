@@ -2,7 +2,6 @@ package ProjectTest.demo.dao;
 
 import ProjectTest.demo.entity.User;
 import ProjectTest.demo.util.JdbcUtil;
-import com.mysql.cj.jdbc.CallableStatementWrapper;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,8 +10,7 @@ import java.sql.SQLException;
 public class UserDao {
 
     public void save(User user) throws SQLException {
-        String sql = "insert into t_user (username,password,email,phone,created,updated) "+
-                "values(?,?,?,?,NOW(),NOW())";
+        String sql = "insert into t_user (username,password,email,phone,created,updated) values(?,?,?,?,NOW(),NOW())";
         Connection conn = null;
         try {
             conn = JdbcUtil.getConn();
@@ -29,7 +27,7 @@ public class UserDao {
     }
 
     public void delete(Integer id) throws SQLException {
-        String sql = "delete from t_user where id = ?";
+        String sql = "DELETE FROM T_USER WHERE id = ?";
         Connection con = null;
         try {
             con = JdbcUtil.getConn();
