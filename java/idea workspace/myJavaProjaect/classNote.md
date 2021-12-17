@@ -6,15 +6,15 @@
 4. 重写
 5. Serializable接口
 > 用于实现java中的序列化(`implements Serializable`)
-> 
+>
 > **serialVersionUID**
-> 
+>
 > 数据序列化(二进制化)的标记
-> 
+>
 > > 有持久化与逆持久化
-> > 
+> >
 > > 通过ObjectOutputStream/ObjectInputStream类实现具体的目标
-> > 
+> >
 > > - objectOUtputStream/持久化
 > > ```
 > > ObjectOutputStream  ops = new ObjectOutputStream(new FileOutputStream("./src/test.txt"));
@@ -27,7 +27,7 @@
 > > pp t = (pp) ips.readObject();
 > > ips.close();
 > > ```
-> > 
+> >
 6. 连接数据库
 > - 加载驱动(MySql)
 > ```
@@ -120,15 +120,15 @@ stmt.setString(2,password);
 >     }
 > ```
 > ***注意，可以使用`private jdbcTools(){}`使该类不能实例化，从而使其调用静态成员函数***
-> 
+>
 > ==========================================
-> 
+>
 > - 属性文件*.properties
-> 
+>
 > 内容：key=value;
-> 
+>
 > ***注意！！！该文件需放到src文件夹下，或将所在文件夹设置为sources root，否则无法找到。***
-> 
+>
 > 类 properties 获取属性文件的键值对
 >
 > ```
@@ -143,12 +143,12 @@ stmt.setString(2,password);
 >             e.printStackTrace();
 >         }
 > ```
-> 
+>
 > - 池化技术/连接池解决大量连接
-> (单例)
-> 
+    > (单例)
+>
 > DBCP C3P0
-> 
+>
 > ```
 > private  static BasicDataSource dataSource = new BasicDataSource();
 > 
@@ -164,5 +164,51 @@ stmt.setString(2,password);
 > 
 >       Connection conn =  dataSource.getConnection();
 > ```
-> 
-> 
+>
+## day04
+注释
+
+```
+String sql = "... ? ...";
+Connection con = null;
+con = jdbcutil.getCon();
+PreparedStatement pstmt = con.createStatement(sql);
+
+pstmt.setString(index,'?');
+pstmt.setInt(index,'?');
+
+pstmt.excuteUpdate();
+//Or pstmt.excuteQuerry();
+
+jdbcutil.closeCon(con);
+```
+
+1. 单元测试
+
+new SourceFolder
+
+Junit4 test case
+
+`@Test` 注解运行,单元测试
+
+可以单独运行,测试与功能分离
+
+```
+/**
+ * func
+ * @param ***(输入变量)
+ * @return ***(返回值类型)
+ * @throws **Exception(抛出异常类型)
+ */
+sout testFunc()...;
+User new;
+try{
+	dao.func()//功能的调用
+	sout 正常;
+}catch(Exception e){
+	e.print();
+	sout 故障;
+}
+```
+
+`user.set***(res.get***("***"));`
