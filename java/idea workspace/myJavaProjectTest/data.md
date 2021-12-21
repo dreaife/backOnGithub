@@ -213,3 +213,48 @@ try{
 ```
 
 `user.set***(res.get***("***"));`
+
+
+## day05
+
+### java项目实现步骤
+
+- 分析实体类
+- 确认建表目录、内容
+- 建立实体类、完成tool工具类连接数据库
+- 实现dao类，实现实体类功能
+- 建立view类，模拟用户页面
+
+**sql页面跳转**
+
+`select * from dbName limit a,b --a为省略条数,b为展示条数`
+
+```
+void showItem(){
+    ItemDao dao = new ItemDao();
+    sout"信息";
+    int page = 1;
+    try{
+        List<Item> list = dao.findByPage(page,4);
+        for(Item item : list){
+            //sout item;
+        }scanner cin = new scanner(sys.in);
+        int selec = cin.nextInt();
+        if("1".equals(selec)){
+            page = max(0,page-1);
+            List<Item> list = dao.findByPage(page,4);
+            for(Item item : list){
+                //sout item;
+            }
+        }else if("2".equals(selec)){
+            page = min(maxPage/4,page+1);
+            List<Item> list = dao.findByPage(page,4);
+            for(Item item : list){
+                //sout item;
+            }
+        }
+    }catch (exception e){
+        e.showtrack;
+    }
+}
+```
