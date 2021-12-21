@@ -2,8 +2,8 @@
 
 Map::Map()
 {
-    map_one.load(MAP_PATH);
-    map_two.load(MAP_PATH);
+    map_one.load(QString(MAP_PATH).arg(1));
+    map_two.load(QString(MAP_PATH).arg(1));
 
     map_one_y=-GAME_HEIGHT;
     map_two_y=0;

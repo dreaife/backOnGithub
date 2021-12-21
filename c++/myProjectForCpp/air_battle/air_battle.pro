@@ -5,7 +5,8 @@
 #-------------------------------------------------
 
 QT       += core gui
-
+QT      +=core gui multimedia
+QT      +=multimedia
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = air_battle
@@ -38,7 +39,8 @@ FORMS    += widget.ui \
 RESOURCES += \
     res.qrc
 
-CONFIG +=c++11 + resources_big
+CONFIG +=c++11
+CONFIG += RESOURCES_BIG
 
 //Qt6修复
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets

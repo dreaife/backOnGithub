@@ -2,7 +2,7 @@
 
 Bullet::Bullet()
 {
-    AirBullet.load(BULLET_PATH);
+    AirBullet.load(QString(BULLET_PATH).arg(8));
     m_x=GAME_WIDTH*0.5;m_y=GAME_HEIGHT*1.3;
     m_Free = true;
     m_speed = BULLET_MOVE_SPEED;

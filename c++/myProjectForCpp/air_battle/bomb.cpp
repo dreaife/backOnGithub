@@ -26,7 +26,7 @@ void Bomb::updatePic(){
     b_reco = 0;
     b_idx++;
 
-    if(b_idx>BOMB_MAX - 1){
+    if(b_idx>BOMB_NUM - 1){
         b_idx=0;
         b_free = true;
     }

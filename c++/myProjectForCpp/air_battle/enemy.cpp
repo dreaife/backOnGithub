@@ -2,7 +2,8 @@
 
 Enemy::Enemy()
 {
-    enemy.load(ENEMY_PATH);
+    srand((unsigned int)time(NULL));
+    enemy.load(QString(ENEMY_PATH).arg(1));
 
     e_x = 0;
     e_y = 0;

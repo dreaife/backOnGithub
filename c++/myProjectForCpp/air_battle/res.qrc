@@ -40,5 +40,8 @@
         <file>res/img-plane_6.png</file>
         <file>res/img-plane_7.png</file>
         <file>res/res.qrc</file>
+        <file>res/FAVOICON.png</file>
+        <file>res/bg.wav</file>
+        <file>res/bomb.wav</file>
     </qresource>
 </RCC>

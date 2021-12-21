@@ -20,9 +20,15 @@ public:
 
     void initWindows();
 
+    bool isSuccess;
+
     Map map;
 
     Widget* m;
+    QLabel *textStart;
+    QLabel* textFailed;
+
+    void paintEvent(QPaintEvent *);
 
     explicit Start(QWidget *parent = 0);
     ~Start();
@@ -31,6 +37,7 @@ public:
 
 public slots:
         void restart();
+        void succes();
 
 private:
     Ui::Start *ui;

@@ -2,7 +2,7 @@
 
 EnemyBullet::EnemyBullet()
 {
-    enemybullet.load(ENEMY_BULLET_PATH);
+    enemybullet.load(QString(ENEMY_BULLET_PATH).arg(1));
     m_x=0;m_y=-GAME_HEIGHT;
     m_Free = true;
     m_speed = ENEMY_BULLET_MOVE_SPEED;
