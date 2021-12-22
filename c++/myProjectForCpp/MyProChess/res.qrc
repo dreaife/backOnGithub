@@ -12,5 +12,6 @@
         <file>res/bg.jpg</file>
         <file>res/backGround5.png</file>
         <file>res/bg.png</file>
+        <file>sound/bgm.wav</file>
     </qresource>
 </RCC>

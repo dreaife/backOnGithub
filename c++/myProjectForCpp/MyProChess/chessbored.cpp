@@ -7,6 +7,12 @@ chessBored::chessBored(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    pressSound = new QSoundEffect;
+    pressSound->setSource(QUrl::fromLocalFile(SOUND_PRESS));
+
+    winSound = new QSoundEffect;
+    winSound->setSource(QUrl::fromLocalFile(SOUND_WIN));
+
     initGameSence();
 
     connect(this->backMenu,&QPushButton::clicked,this,&chessBored::backMenuClicked);
@@ -245,7 +251,7 @@ void chessBored::mousePressEvent(QMouseEvent *e){
 
     if(e->button() == Qt::LeftButton){
         if(this->chessOnBored[dropI][dropJ] != 0) return;
-        QSound::play(SOUND_PRESS);
+        pressSound->play();
         if(times%2){
             times++;
             chessOnBored[dropI][dropJ] = 1;
@@ -253,7 +259,7 @@ void chessBored::mousePressEvent(QMouseEvent *e){
             if(isGameOver(dropI,dropJ)){
                 timer.stop();
                 emit gameEnd(counts);
-                QSound::play(SOUND_WIN);
+               winSound->play();
                 QMessageBox::information(this,"游戏结束","白方胜利");
                 gameModel = 0;
                 //return ;
@@ -266,7 +272,7 @@ void chessBored::mousePressEvent(QMouseEvent *e){
                 timer.stop();
                 qDebug()<<counts;
                 emit gameEnd(counts);
-                QSound::play(SOUND_WIN);
+                winSound->play();
                 QMessageBox::information(this,"游戏结束","黑方胜利");
                 gameModel = 0;
                 //return ;
@@ -311,14 +317,12 @@ void chessBored::robotChess(){
     else t = rob.getPointProf(chessOnBored);
     dropI=t.x;dropJ=t.y;
     qDebug()<<t.x<<' '<<t.y;
-    QSound::play(SOUND_PRESS);
+    pressSound->play();
     sleep_msec(5);
     if(times%2){
         times++;
         chessOnBored[dropI][dropJ] = 1;
-        qDebug()<<"OK";
         emit chessPress();
-        qDebug()<<"OK";
         if(isGameOver(dropI,dropJ)){
             timer.stop();
             QMessageBox::information(this,"游戏结束","白方胜利");

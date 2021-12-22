@@ -26,7 +26,8 @@
 
 #define SOUND_START ":/sound/start.wav"
 #define SOUND_PRESS ":/sound/press.wav"
-#define SOUND_WIN ":/sound/press.wav"
+#define SOUND_WIN ":/sound/win.wav"
+#define SOUND_BGM "://sound/bgm.wav"
 
 #define CHESS_NUM 256
 
@@ -55,7 +56,7 @@
 #include <QCoreApplication>
 #include <QFile>
 #include <QByteArray>
-#include <QSound>
+#include <QSoundEffect>
 
 const int levelRank[20] = {5,10,15,20,30,50,70,100,130,160,200,250,300,350,400,500,600,700,800,900};
 

@@ -44,6 +44,9 @@ public:
     int PlayerOne;
     int PlayerTwo;
 
+    QSoundEffect* pressSound;
+    QSoundEffect* winSound;
+
     Chess virtualPoint;
     QTimer timer;
 

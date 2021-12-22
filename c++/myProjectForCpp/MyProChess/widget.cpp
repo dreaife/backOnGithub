@@ -7,6 +7,12 @@ Widget::Widget(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    startSound = new QSoundEffect;
+    startSound->setSource(QUrl::fromLocalFile(SOUND_START));
+
+    bgm = new QSoundEffect;
+    bgm->setSource(QUrl::fromLocalFile(SOUND_BGM));
+
     pve = new QPushButton();
     score = new QPushButton();
     level = new QPushButton();
@@ -163,7 +169,7 @@ void Widget::initScense(){
 }
 
 void Widget::initPlayersData(){
-    QFile file("members.dat");
+    QFile file("./members.dat");
     if(!file.open(QIODevice::ReadOnly | QIODevice::Text)) return;
     QDataStream in(&file);
     in >> members;
@@ -232,7 +238,6 @@ void Widget::initPlayerScore(){
     for(int i=0;i<5;i++)
         for(int j=i+1;j<5;j++)
             if(temp[i]==temp[j]) temp[j]=0;
-    for(int i=0;i<5;i++) qDebug()<<temp[i];
     if(temp[0]) ui->mem1->setText("1."+members[temp[0]].username+"  "+QString::number(members[temp[0]].bestScore));
     if(temp[1]) ui->mem2->setText("2."+members[temp[1]].username+"  "+QString::number(members[temp[1]].bestScore));
     if(temp[2]) ui->mem3->setText("3."+members[temp[2]].username+"  "+QString::number(members[temp[2]].bestScore));
@@ -266,7 +271,7 @@ void Widget::showPlayerScore(){
 
 void Widget::gameStart(QString* gameLev){
     this->close();
-    QSound::play(SOUND_START);
+    startSound->play();
     w->GameLevelDefine(gameLev);
     w->show();
     w->counts = 999;

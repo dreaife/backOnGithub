@@ -23,6 +23,9 @@ public:
     explicit Widget(QWidget *parent = 0);
     ~Widget();
 
+    QSoundEffect *startSound;
+    QSoundEffect *bgm;
+
     QPushButton *pve;
     QPushButton *score;
     QPushButton *level;

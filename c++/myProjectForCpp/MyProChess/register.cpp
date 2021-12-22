@@ -28,7 +28,7 @@ void Register::paintEvent(QPaintEvent *){
 }
 
 void Register::initPlayersData(){
-    QFile file("members.dat");
+    QFile file("./members.dat");
     if(!file.open(QIODevice::ReadOnly | QIODevice::Text)) return;
     QDataStream in(&file);
     in >> members;
@@ -46,7 +46,7 @@ void Register::clearText(){
 }
 
 void Register::saveGamePlayerData(){
-    QFile writeFile("members.dat");
+    QFile writeFile("./members.dat");
     writeFile.open(QIODevice::WriteOnly);
     QDataStream out(&writeFile);
     out << members;

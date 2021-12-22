@@ -4,7 +4,7 @@ Robot::Robot(QWidget *parent) :
     QWidget(parent)
 {
     memset(w,0,sizeof(w));
-    qsrand((unsigned int)time(NULL));
+    srand((unsigned int)time(NULL));
 
     ComType = 1;
     PerType = -1;
@@ -128,11 +128,11 @@ cP Robot::getPointPrim(int tb[16][16]){
         }
     int temp = 0;
     cP t;
-    t.x = qrand()%16;
-    t.y = qrand()%16;
+    t.x = rand()%16;
+    t.y = rand()%16;
     while(cb[t.x][t.y]!=0){
-        t.x = qrand()%16;
-        t.y = qrand()%16;
+        t.x = rand()%16;
+        t.y = rand()%16;
     }
     for(int i=0;i<16;i++)
         for(int j=0 ; j<16 ; j++) if(w[i][j]>temp){
@@ -220,11 +220,11 @@ cP Robot::getPointMidd(int tb[16][16]){
         }
     int temp = 0;
     cP t;
-    t.x = qrand()%16;
-    t.y = qrand()%16;
+    t.x = rand()%16;
+    t.y = rand()%16;
     while(cb[t.x][t.y]!=0){
-        t.x = qrand()%16;
-        t.y = qrand()%16;
+        t.x = rand()%16;
+        t.y = rand()%16;
     }
     for(int i=0;i<16;i++)
         for(int j=0 ; j<16 ; j++) if(w[i][j]>temp){
@@ -312,11 +312,11 @@ cP Robot::getPointProf(int tb[16][16]){
         }
     int temp = 0;
     cP t;
-    t.x = qrand()%16;
-    t.y = qrand()%16;
+    t.x = rand()%16;
+    t.y = rand()%16;
     while(cb[t.x][t.y]!=0){
-        t.x = qrand()%16;
-        t.y = qrand()%16;
+        t.x = rand()%16;
+        t.y = rand()%16;
     }
     for(int i=0;i<16;i++)
         for(int j=0 ; j<16 ; j++) if(w[i][j]>temp){

@@ -1,28 +1,49 @@
 package test.work.demo02.view;
 
 import test.work.demo02.dao.pmsDao;
+import test.work.demo02.entity.User;
 
+import java.sql.SQLException;
 import java.util.Scanner;
 
 public class userView {
+    static pmsDao dao = new pmsDao();
     public static void main(String[] args) {
         Scanner cin = new Scanner(System.in);
-        System.out.printf("ç™»å½•,1\næ³¨å†Œ,2\n");
-        int selec = cin.nextInt();
-        System.out.println("è¾“å…¥è´¦å·åŠå¯†ç ");
+        System.out.printf("µÇÂ¼,1\n×¢²á,2\n");
+        String selec = cin.nextLine();
+        System.out.println("ÊäÈëÕËºÅ");
         String accName = cin.nextLine();
+        System.out.println("ÊäÈëÃÜÂë");
         String password = cin.nextLine();
-        pmsDao dao = new pmsDao();
-        if(selec == 1){
+        if("1".equals(selec)){
             toLogin(accName,password);
         }else{
             toRegist(accName,password);
-        }
+        }cin.close();
     }
-    static void toLogin(String name, String password){
-
+    static void toLogin(String name, String password) {
+        User user = null;
+        try {
+            user = dao.login(name,password);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.out.println("ÏµÍ³ÕıÔÚÎ¬»¤");
+        }if(user == null)
+            System.out.println("µÇÂ¼Ê§°Ü");
+        else
+            System.out.println("µÇÂ¼³É¹¦");
     }
     static void toRegist(String name, String password){
-
+        int i = 0;
+        try {
+            i = dao.newLog(name,password);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.out.println("ÏµÍ³ÕıÔÚÎ¬»¤");
+        }if(i == 0)
+            System.out.println("×¢²áÊ§°Ü");
+        else
+            System.out.println("×¢²á³É¹¦");
     }
 }

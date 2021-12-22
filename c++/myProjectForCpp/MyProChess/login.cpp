@@ -42,7 +42,7 @@ void Login::paintEvent(QPaintEvent *){
 }
 
 void Login::initPlayersData(){
-    QFile file("members.dat");
+    QFile file("./members.dat");
     if(!file.open(QIODevice::ReadOnly | QIODevice::Text)) return;
     QDataStream in(&file);
     in >> members;
@@ -63,6 +63,7 @@ void Login::on_loginGame_clicked()
     if(a==members[i].username&&b==members[i].password){
         qDebug()<<"accept";
         emit success(i);
+        w->bgm->play();
         this->close();
         return;
     }

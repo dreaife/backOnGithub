@@ -1,8 +1,7 @@
 package test.work.demo02.dao;
 
-import test.work.demo.entity.Account;
-import test.work.demo.util.JdbcUtil;
 import test.work.demo02.entity.User;
+import test.work.demo02.util.JdbcUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -30,7 +29,7 @@ public class pmsDao {
             if(res.next()){
                 user = new User();
                 user.setId(res.getInt("id"));
-                user.setUserName(res.getString("accout"));
+                user.setUserName(res.getString("name"));
                 user.setPassword(res.getString("password"));
 //                user.setEmail(res.getString("email"));
 //                user.setPhone(res.getString("phone"));

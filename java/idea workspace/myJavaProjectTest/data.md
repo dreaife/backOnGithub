@@ -257,4 +257,23 @@ void showItem(){
         e.showtrack;
     }
 }
+
+//获取最大表的最大数量
+int getMaxPage(){
+    int maxpage = 0;
+    Connection conn = null;
+    String sql = "select count(ID) from t_item";
+    try{
+        conn = jdbctool.getConn();
+        Statement stmt = conn.createStatement();
+        ResultSet res = stmt.excuteQuerry(sql);
+        if(res.next()){
+            maxPage = res.getInt(1);
+        }
+    }catch(Exception e){
+        e.printtrack();
+    }
+    return maxpage;
+}
 ```
+
