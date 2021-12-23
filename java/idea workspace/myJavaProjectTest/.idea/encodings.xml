@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/test/test/work/demo/dao/AccountDaoTest.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/test/work/demo/entity/AccountTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/work/demo02/view/itemView.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/work/demo02/view/userView.java" charset="GBK" />
   </component>
 </project>

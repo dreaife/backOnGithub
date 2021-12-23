@@ -67,4 +67,21 @@ public class pmsDao {
         }
         return i;
     }
+
+    public void updatePassword(Integer id,String newPassword) throws SQLException{
+        String sql = "UPDATE t_user SET password=? WHERE id=?";
+        Connection conn = null;
+        try {
+            conn = JdbcUtil.getConn();
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, newPassword);
+            pstmt.setInt(2, id);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw e;
+        }finally{
+            JdbcUtil.closeConn(conn);
+        }
+    }
 }

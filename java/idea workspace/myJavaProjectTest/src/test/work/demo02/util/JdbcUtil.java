@@ -59,12 +59,4 @@ public class JdbcUtil {
                 e.printStackTrace();
             }
     }
-    public static void main(String[] args) {
-        try {
-            System.out.println(getConn());
-            System.out.println(getConn());
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
 }
