@@ -1,44 +1,24 @@
 #include<iostream>
+#include<fstream>
+#include<cmath>
 using namespace std;
-
-
-class Complex{
-    public:
-		Complex ();
-        Complex (int,int);                          //构造函数
-        Complex (const Complex &c);                 //复制构造函数 
-        ~ Complex ();                               //析构函数
-        
-        Complex operator + (Complex &m);            //重载 + 运算符
-        Complex operator * (Complex &m);            //重载 * 运算符
-        friend ostream &operator << (ostream &out,
-                              const Complex &m);    //重载"<<"运算符 
-        int getReal() const {return real;}              //得到复数实部
-        int getImag() const {return imag;}              //得到复数虚部
-    private:
-        int real,imag;                              //复数的实部与虚部
-};
-
-Complex::Complex():real(0),imag(0){}
-Complex::Complex(int a,int b):real(a),imag(b){}
-Complex::Complex(const Complex &c):real(c.getReal()),imag(c.getImag()){}
-Complex::~Complex(){real = 0;imag = 0;}
-Complex Complex::operator + (Complex &m){
-	return Complex(real+m.getReal(),imag+m.getImag());
+void qs(int q[],int l,int r){
+    if(l>=r) return ;
+    int i=l-1,j=r+1,x=q[l+r>>1];
+    while(i<j){
+        do i++;while(q[i]>x);
+        do j--;while(q[j]<x);
+        if(i<j)
+            swap(q[i],q[j]);
+    }
+    qs(q,l,j);
+    qs(q,j+1,r);
 }
-Complex Complex::operator * (Complex &m){
-	return Complex(real*m.getReal()-imag*m.getImag(),real*m.getImag()+imag*m.getReal());
-}
-ostream &operator << (ostream &out,const Complex &m){
-	return out<<"("<<m.getReal()<<","<<m.getImag()<<")"<<endl;
-}
-int main(void){
-    Complex c1(5,4),c2(3,10),c3;                    //定义复数类的对象
-     c3 = c1 + c2;
-     
-     cout << "c3 = " << c3;
-     Complex c4 = c1 * c2 ;
-     cout << "c4 = " << c4;
-    
+int main(){
+    int a[10] = {19, 32, 45, 51, 71, 23, 38, 11, 17, 8};
+    qs(a,0,9);
+    ofstream t1("f3.dat",ios_base::binary|ios_base::out);
+    t1.write((char*)a,sizeof(a));
+    t1.close();
     return 0;
 }
