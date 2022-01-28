@@ -3,7 +3,10 @@
         "iostream": "cpp",
         "ostream": "cpp",
         "vector": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "algorithm": "cpp",
+        "fstream": "cpp",
+        "istream": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }

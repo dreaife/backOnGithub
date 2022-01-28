@@ -2,23 +2,28 @@
 #include<fstream>
 #include<cmath>
 using namespace std;
-void qs(int q[],int l,int r){
-    if(l>=r) return ;
-    int i=l-1,j=r+1,x=q[l+r>>1];
-    while(i<j){
-        do i++;while(q[i]>x);
-        do j--;while(q[j]<x);
-        if(i<j)
-            swap(q[i],q[j]);
+int cnt(int n,int a){
+    if(!n||!a) return 1;
+    int t1 = n,t2 = a;
+    for(int i=1;i<a;i++)
+        t1 *= n-i,t2 *= a-i;
+    return t1/t2;
+}
+void solve(int n){
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            cout<<cnt(i-1,j-1)<<' ';
+        }cout<<endl;
     }
-    qs(q,l,j);
-    qs(q,j+1,r);
 }
 int main(){
-    int a[10] = {19, 32, 45, 51, 71, 23, 38, 11, 17, 8};
-    qs(a,0,9);
-    ofstream t1("f3.dat",ios_base::binary|ios_base::out);
-    t1.write((char*)a,sizeof(a));
-    t1.close();
+    solve(8);
+    ifstream infile("NextReport.cpp",ios::binary);
+    char ch;
+    while(infile.peek()!=EOF){
+        infile.read(&ch,sizeof(ch));
+        cout<<ch;
+    }cout<<endl;
+    infile.close();
     return 0;
 }
