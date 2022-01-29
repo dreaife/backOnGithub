@@ -8,5 +8,6 @@
         "fstream": "cpp",
         "istream": "cpp"
     },
-    "C_Cpp.errorSquiggles": "Enabled"
+    "C_Cpp.errorSquiggles": "Enabled",
+    "jupyter.jupyterServerType": "local"
 }
