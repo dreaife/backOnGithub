@@ -1,19 +1,68 @@
-#include<iostream>
-#include<cstring>
-#include<algorithm>
+#include <cstdio>
+#include <algorithm>
+#include <cstring>
+#include <iostream>
 using namespace std;
-typedef long long ll;
-//const int N = 1e5+10;
-//int a[N];
-//int n;
-//string s;
-void solve(){
-
+int a[100010],cnt;
+int n,m;
+int b;
+int lowbit(int x)
+{
+	return x&-x;
+ } 
+int qw(int x)
+{
+	int ans=0;
+	while(x)
+	{
+		ans++;
+		x/=2;
+		
+	}
+	return ans;
 }
-int main(){
-    ios::sync_with_stdio(false);
-    cin.tie(0);cout.tie(0);
-    int _;cin>>_;
-    while(_--) solve();
-    return 0;
+int main()
+{
+	cin>>n;
+	for(int i=1;i<=n;i++)
+	{
+		cin>>b;
+		m++;
+		while(b)
+		{
+			a[qw(lowbit(b))]++;
+			cnt=max(qw(lowbit(b)),cnt);
+			b-=lowbit(b);
+		}
+	}
+	int flag=0;
+	for(int i=cnt;i>=0;i--)
+	{
+		if(a[i]%2==1)
+		{
+			if(a[i]/2%2==0||(a[i]/2%2==1&&(m-a[i])%2==1))
+			{
+				flag=1;
+				break;
+			}
+			else
+			{
+				flag=-1;
+				break;
+			}
+		}
+	}
+	if(flag==1)
+	{
+		cout<<"WIN";
+	}
+	else if(flag==-1)
+	{
+		cout<<"LOSE";
+	}
+	else
+	{
+		cout<<"DRAW";
+	} 
+	
 }
