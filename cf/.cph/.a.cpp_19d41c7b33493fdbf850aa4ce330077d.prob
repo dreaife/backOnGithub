@@ -1,0 +1,1 @@
+{"name":"Local: a","url":"d:\\codeS\\backOnGithub\\cf\\a.cpp","tests":[{"id":1650175716911,"input":"10 5\n00132 10093 92001 23333 66666 88888 09009 34658 82750 69251\n1 2 3 4 5\n9 8 7 6 1\n5\n66666\n88888\n69251\n55555\n10093","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\codeS\\backOnGithub\\cf\\a.cpp","group":"local","local":true}
