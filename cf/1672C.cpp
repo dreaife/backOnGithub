@@ -1,20 +1,19 @@
 #include<iostream>
 #include<cstring>
 #include<algorithm>
-#include<map>
 using namespace std;
 typedef long long ll;
-map<int,int> a;
 const int N = 2e5+10;
+int a[N];
 int n;
 //string s;
 void solve(){
-    a.clear();
     cin>>n;
-    for(int i=0,t;i<n;i++) cin>>t,a[t]++;
-    for(auto i:a) if(i.second >= 3)
-        return void(cout<<i.first<<endl);
-    cout<<-1<<endl;
+    for(int i=1;i<=n;i++) cin>>a[i];
+    for(int i=1,j = 0;i<=n;i++){
+        while(a[i]==a[i+1]) i++;
+        if(i-j>2)
+    }
 }
 int main(){
     ios::sync_with_stdio(false);

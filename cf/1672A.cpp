@@ -3,16 +3,14 @@
 #include<algorithm>
 using namespace std;
 typedef long long ll;
-//const int N = 1e5+10;
-//int a[N];
-//int n;
+int ans;
+int n;
 //string s;
 void solve(){
-    int n,m;
-    cin>>n>>m;int t=min(m,n);m=max(n,m);n=t;
-    int ans = 2*(n-1) + (m-n)/2 * 4 + (m-n)%2;
-    if(n==1 && m>2) return void(cout<<-1<<endl);
-    cout<<ans<<endl;
+    cin>>n;ans = 0;
+    for(int i=0,t;i<n;i++) cin>>t,ans += t-1;
+    if(ans%2) cout<<"errorgorn"<<endl;
+    else cout<<"maomao90"<<endl;
 }
 int main(){
     ios::sync_with_stdio(false);
@@ -21,3 +19,5 @@ int main(){
     while(_--) solve();
     return 0;
 }
+//errorgorn 
+//maomao90 

@@ -1,33 +1,27 @@
 #include<iostream>
-#include<algorithm>
-#include<cstring>
-#include<unordered_map>
 using namespace std;
-unordered_map<int,int> b;
-const int N = 110;
-int n,k,x;
-struct T{
-    string name;
-    int n,k;
-};T a[N];
+const int N = 1e5+10;
+int n,q,p,ne[N],d[N],a[N];
+int fa(int x){
+    if(ne[x]==-1) return 1;
+    int t = fa(ne[x]);
+    d[x] += d[ne[x]];
+    return ne[x] = t;
+}
 int main(){
-    cin>>n;
-    for(int i=0;i<n;i++){
-        b.clear();
-        cin>>a[i].name>>k;a[i].n=k;
-        for(int i=0;i<k;i++){
-            int t;cin>>t;
-            b[t]++;
-        }a[i].k = b.size();
-    }sort(a,a+n,[](T t1,T t2){
-        if(t1.k<t2.k) return true;
-        else if(t1.k == t2.k)
-            if(t1.n < t2.n) return true;
-        return false;
-    });
-    for(int i=0;i<n;i++) cout<<a[i].name<<' ';
-    if(n<3){
-        for(int i=0;i<3-n;i++) cout<<'- ';
+    cin>>n>>q;
+    for(int i=1;i<=n;i++){
+        cin>>ne[i],d[i]=1;
+    }d[p]=0;
+    for(int i=1;i<=n;i++) if(ne[i]==-1){
+        p = i;break;
     }
+    for(int i=1;i<=n;i++) 
+        fa(i);
+    while(q--){
+        int ttt;cin>>ttt;fa(ttt);
+        cout<<1+d[ttt]<<endl;
+    }
+    
     return 0;
 }
