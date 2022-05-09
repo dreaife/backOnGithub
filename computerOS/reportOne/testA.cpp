@@ -29,8 +29,8 @@ bool check(){
 void init(){
     memset(back,0,sizeof back);
     cout<<"请输入预计运行进程数"<<endl;cin>>n;
+    cout<<"请输入进程的名称、到达时间、运行时间"<<endl;
     for(int i=0;i<n;i++){
-        //cout<<"请输入进程的名称、到达时间、运行时间"<<endl;
         cin>>back[i].name>>back[i].atime>>back[i].runtime;back[i].stime = -1;
     }piece = calc();
 }
@@ -59,7 +59,7 @@ void runP(){
 	}
 }
 void print(){
-    cout<<"短进程优先调度算法"<<endl;
+    cout<<"时间片调度算法"<<endl;
     cout<<setiosflags(ios::left)<<setprecision(8)<<setiosflags(ios::fixed);
     cout<<"进程名"<<"\t\t"<<setw(15)<<"进程到达时间"<<"\t"<<setw(10)<<"进程运行时间"<<"\t"<<setw(10)<<
         "进程开始运行时间"<<"\t"<<setw(10)<<"进程完成时间"<<"\t"<<setw(10)<<"周转时间"<<"\t"<<setw(10)<<"带权周转时间"<<endl;
