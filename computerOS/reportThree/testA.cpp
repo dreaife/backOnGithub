@@ -40,16 +40,17 @@ void run(){
     }
 }
 void print(){
-    cout<<"程序运转过程"<<endl;
+    cout<<"OPT算法模拟程序运转过程:"<<endl;
     cout<<setiosflags(ios::left)<<setprecision(4)<<setiosflags(ios::fixed);cout<<1;
-    for(int i=1;i<=n;i++) cout<<"    "<<setw(4)<<i;cout<<endl<<endl;
+    for(int i=2;i<=n;i++) cout<<"    "<<setw(4)<<i;cout<<endl<<endl;
     for(int i=0;i<m;i++){cout<<c[i][1];
         for(int j=2;j<=n;j++) cout<<"    "<<setw(4)<<c[i][j];
         cout<<endl;
     }int sum = 0;
     for(int i=1;i<=n;i++) if(~td[i])
         sum ++;
-    cout<<endl<<sum<<'\t'<<setprecision(2)<<sum*100.0/n<<"%"<<endl;
+    cout<<"\n缺页数\t缺页率\t命中率"<<endl;
+    cout<<sum<<'\t'<<setprecision(2)<<sum*100.0/n<<"%\t"<<setprecision(2)<<(1-sum*1.0/n)*100<<"%"<<endl;
 }
 int main(){
     init();
