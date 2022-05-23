@@ -7,7 +7,7 @@ const int N = 1e5+10;
 int n,a[N];
 string s;
 void solve(){
-
+    cout<<"hello"<<endl;
 }
 int main(){
     int _;cin>>_;
