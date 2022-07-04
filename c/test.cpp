@@ -1,30 +1,26 @@
 #include <iostream>
 #include <cstring>
 #include <algorithm>
-
 using namespace std;
-
-const int N = 110;
-int q[N];
-int ans=0;
-
-int main()
-{
-    int T;cin>>T;
-    while(T--){
-        int n,k=0;cin>>n;
-        ans=0;
-        memset(q,0,sizeof(q));
-        for (int i = 0; i < n; i ++ ){
-            int t=0;cin>>t;
-            q[t]++;
-        }
-        for (int i = 0; i < N; i ++ ){
-            if(q[i]==1&&k==0) {ans=i;k++;}
-            if(q[i]==0&&k==1) {ans+=i;break;}
-            if(q[i]==0&&k==0) {ans=2*i;break;}
-        }
-        cout<<ans<<endl;
-    }
+typedef long long ll;
+const int N = 2e5+10;
+int n,l,r,a[N];
+ll ans;
+bool check(int t){
+    for(int j=2;j*j<=t;j++) if(t%j==0)
+        return false;
+    return true;
+}
+void solve(){
+    n=1e9;ans=0;
+    for(int i=2;i<n;i++){
+        if(check(i)) ans++;
+    }cout<<ans<<endl;
+}
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(0);cout.tie(0);
+    int _=1;//cin>>_;
+    while(_--) solve();
     return 0;
 }
