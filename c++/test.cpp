@@ -2,15 +2,11 @@
 #include<algorithm>
 #include<string>
 using namespace std;
-typedef long long ll;
-const int N = 1e5+10;
-int n,a[N];
-string s;
-void solve(){
-    cout<<"hello"<<endl;
+int &f(int b){
+    static int a = 1+ b;
+    return a;
 }
 int main(){
-    int _;cin>>_;
-    while(_--) solve();
+    cout<<f(1)<<endl;
     return 0;
 }
