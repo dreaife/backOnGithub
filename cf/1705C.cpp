@@ -7,29 +7,31 @@ typedef long long ll;
 typedef pair<int, int> PII;
 const int N = 2e5 + 10;
 #define int ll
-int a[1000];
-vector<PII> b;
-int n, c, q, l, r, k;
-char s[N];
-int getPos(int pos)
+int a[N];
+struct T
 {
-    if (pos <= n)
-        return pos;
+    int l, r;
+} b[N];
+int n, c, q, l, r, k;
+string s;
+int getPos(int &pos)
+{
     int p = lower_bound(a + 1, a + c + 2, pos) - a;
-    pos -= a[p - 1];
-    pos += b[p - 1].first - 1;
-    return getPos(pos);
+    while (p != 1)
+    {
+        int d = pos - a[p - 1];
+        pos = b[p].l + d - 1;
+        p = lower_bound(a + 1, a + c + 2, pos) - a;
+    }
+    return pos;
 }
 void solve()
 {
-    memset(a, 0x3f, sizeof a);
-    b.clear();
-    a[0] = 0;
     cin >> n >> c >> q >> s;
     a[1] = n;
-    b.push_back({1, n});
+    b[1] = {1, n};
     for (int i = 2; i <= c + 1; i++)
-        cin >> l >> r, a[i] = r - l + 1, a[i] += a[i - 1], b.push_back({l, r});
+        cin >> l >> r, a[i] = r - l + 1, a[i] += a[i - 1], b[i] = {l, r};
     // for (int i = 0; i <= c + 1; i++)
     //     cout << a[i] << ' ';
     // cout << endl;
@@ -37,7 +39,7 @@ void solve()
     {
         cin >> k;
         int p = getPos(k);
-        cout << s[p - 1] << endl;
+        cout << s[k - 1] << endl;
     }
 }
 signed main()

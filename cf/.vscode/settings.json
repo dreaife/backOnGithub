@@ -10,6 +10,7 @@
         "vector": "cpp",
         "limits": "cpp",
         "stack": "cpp",
-        "istream": "cpp"
+        "istream": "cpp",
+        "unordered_map": "cpp"
     }
 }
