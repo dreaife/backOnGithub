@@ -1,0 +1,1 @@
+{"name":"Local: nowA","url":"d:\\codeS\\backOnGithub\\cf\\nowA.cpp","tests":[{"id":1658118898415,"input":"5\n1 2\n2 4\n5 6\n7 8\n7 9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\codeS\\backOnGithub\\cf\\nowA.cpp","group":"local","local":true}
