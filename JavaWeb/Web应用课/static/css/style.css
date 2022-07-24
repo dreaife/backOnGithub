@@ -5,7 +5,7 @@ img {
 div {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 p {
     width: 50px;
@@ -21,9 +21,9 @@ p {
 }
 
 div {
-    color: white;
-    width: 300px;
-    height: 300px;
+    color: blue;
+    width: 150px;
+    height: 150px;
 }
 div:nth-child(odd) {
     background-color: #0000FF;
@@ -31,11 +31,14 @@ div:nth-child(odd) {
 div:nth-child(even) {
     background-color: rgba(255, 0, 0, 0.7);
 }
-.big-div {
+div[small-div] {
     width: 200px;
     height: 200px;
 }
 #big-div {
     width: 400;
     height: 400px;
+}
+div[hover-div]:hover {
+    background-color: orange;
 }

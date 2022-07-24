@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class DBHelper {
     private static final String drive = "org.mariadb.jdbc.Driver";
-    private static final String url = "jdbc:mariadb://127.0.0.1:3600/infor?characterEncoding=utf8";
+    private static final String url = "jdbc:mariadb://127.0.0.1:3600/infor";
     private static final String username = "root";
     private static final String password = "20011223";
     public Connection con = null;
