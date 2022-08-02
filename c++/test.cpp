@@ -8,5 +8,6 @@ int &f(int b){
 }
 int main(){
     cout<<f(1)<<endl;
+    cout<<f(f(1))<<endl;
     return 0;
 }

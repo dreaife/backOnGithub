@@ -1,0 +1,1 @@
+{"name":"C. Minimum Varied Number","group":"Codeforces Round #811 (Div. 3)","url":"https://codeforces.com/contest/1714/problem/C","interactive":false,"memoryLimit":256,"timeLimit":1000,"tests":[{"input":"4\n20\n8\n45\n10","output":"389\n8\n123456789\n19","id":1659367240498}],"input":{"type":"stdin"},"output":{"type":"stdout"},"srcPath":"d:\\codeS\\backOnGithub\\cf\\1714C.cpp"}
