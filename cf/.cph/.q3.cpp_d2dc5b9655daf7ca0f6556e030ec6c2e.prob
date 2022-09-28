@@ -1,0 +1,1 @@
+{"name":"Local: q3","url":"d:\\codeS\\backOnGithub\\cf\\q3.cpp","tests":[{"id":1661955325344,"input":"5 5 3\n1 2 3 3 3\n1 2 3 4 5\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\codeS\\backOnGithub\\cf\\q3.cpp","group":"local","local":true}
