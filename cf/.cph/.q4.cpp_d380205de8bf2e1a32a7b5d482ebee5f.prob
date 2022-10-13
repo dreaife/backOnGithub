@@ -1,1 +1,1 @@
-{"name":"Local: q4","url":"d:\\codeS\\backOnGithub\\cf\\q4.cpp","tests":[{"id":1661961102040,"input":"2\n2 1\n0 3\n0 0 4 0\n10 11\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\codeS\\backOnGithub\\cf\\q4.cpp","group":"local","local":true}
+{"name":"Local: q4","url":"d:\\codeS\\backOnGithub\\cf\\q4.cpp","tests":[{"id":1661961102040,"input":"2\n2 1\n0 3\n0 0 4 0\n10 11","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\codeS\\backOnGithub\\cf\\q4.cpp","group":"local","local":true}

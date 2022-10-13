@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="zh-CN">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="referrer" content="always">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>OSCHINA - 中文开源技术交流社区</title>
+    <meta name="keywords" content="开源,OSC,开源软件,开源硬件,开源网站,开源社区,java开源,perl开源,python开源,ruby开源,php开源,开源项目,开源代码">
+    <meta name="description" content="OSCHINA.NET 是目前领先的中文开源技术社区。我们传播开源的理念，推广开源项目，为 IT 开发者提供了一个发现、使用、并交流开源技术的平台">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://static.oschina.net/new-osc/js/utils/semantic-ui/semantic.min.css?t=1585021363000">
+    <link type="text/css" rel="stylesheet" href="https://static.oschina.net/new-osc/dist/css/web.2285737b.css">
+    <script charset="utf-8" src="https://hmcdn.baidu.com/static/tongji/plugins/UrlChangeTracker.js"></script>
+    <script
+        src="https://lf1-cdn-tos.bytegoofy.com/goofy/ttzz/push.js?2f2c965c87382dadf25633a3738875e5ccd132720338e03bf7e464e2ec709b9dfd9a9dcb5ced4d7780eb6f3bbd089073c2a6d54440560d63862bbf4ec01bba3a"
+        id="ttzz"></script>
+    <script src="https://hm.baidu.com/hm.js?a411c4d1664dd70048ee98afe7b28f0b"></script>
+    <script src="https://zz.bdstatic.com/linksubmit/push.js"></script>
+    <script type="text/javascript">window.__STATIC_DOMAIN = "https://static.oschina.net";</script>
+    <script src="https://static.oschina.net/new-osc/js/utils/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://static.oschina.net/new-osc/img/favicon.ico">
+    <link rel="alternate" type="application/rss+xml" title="最新开源项目" href="https://www.oschina.net/project/rss">
+    <link rel="alternate" type="application/rss+xml" title="最新开源资讯" href="https://www.oschina.net/news/rss">
+    <link rel="alternate" type="application/rss+xml" title="最新问题列表" href="https://www.oschina.net/question/rss">
+    <link rel="alternate" type="application/rss+xml" title="最新翻译列表" href="https://www.oschina.net/translate/rss">
+    <link rel="alternate" type="application/rss+xml" title="最新博客列表" href="https://www.oschina.net/blog/rss">
+    <link rel="alternate" type="application/rss+xml" title="推荐博客列表" href="https://www.oschina.net/blog/rss?show=more">
+    <link rel="alternate" type="application/rss+xml" title="推荐软件列表"
+        href="https://www.oschina.net/project/rss?show=recomms">
+    <link rel="alternate" type="application/rss+xml" title="最新代码分享列表" href="https://www.oschina.net/code/rss">
+    <link rel="alternate" type="application/rss+xml" title="OSCHINA - 源码列表"
+        href="https://www.oschina.net/code/source_rss">
+
+    <link rel="alternate" type="application/rss+xml" title="非结构化数据最新文章"
+        href="https://www.oschina.net/groups/rss?ident=unstructured-data">
+    <link rel="alternate" type="application/rss+xml" title="OpenVINO 中文社区最新文章"
+        href="https://www.oschina.net/groups/rss?ident=openvino">
+    <link rel="alternate" type="application/rss+xml" title="大前端最新文章"
+        href="https://www.oschina.net/groups/rss?ident=cross-front">
+    <link rel="alternate" type="application/rss+xml" title="开发技能最新文章"
+        href="https://www.oschina.net/groups/rss?ident=skill">
+    <link rel="alternate" type="application/rss+xml" title="数据库最新文章"
+        href="https://www.oschina.net/groups/rss?ident=database">
+    <link rel="alternate" type="application/rss+xml" title="云计算最新文章"
+        href="https://www.oschina.net/groups/rss?ident=cloud">
+    <link rel="alternate" type="application/rss+xml" title="飞桨专区最新文章"
+        href="https://www.oschina.net/groups/rss?ident=paddlepaddle">
+    <link rel="alternate" type="application/rss+xml" title="OpenHarmony专区最新文章"
+        href="https://www.oschina.net/groups/rss?ident=openharmony">
+    <link rel="alternate" type="application/rss+xml" title="开源治理最新文章"
+        href="https://www.oschina.net/groups/rss?ident=osgovernance">
+    <link rel="alternate" type="application/rss+xml" title="程序人生最新文章"
+        href="https://www.oschina.net/groups/rss?ident=programmer">
+    <link rel="alternate" type="application/rss+xml" title="软件架构最新文章"
+        href="https://www.oschina.net/groups/rss?ident=architecture">
+    <link rel="alternate" type="application/rss+xml" title="行业趋势最新文章"
+        href="https://www.oschina.net/groups/rss?ident=trend">
+    <link rel="alternate" type="application/rss+xml" title="硬件 &amp; IoT最新文章"
+        href="https://www.oschina.net/groups/rss?ident=hardware-iot">
+    <link rel="alternate" type="application/rss+xml" title="AI &amp; 大数据最新文章"
+        href="https://www.oschina.net/groups/rss?ident=ai-bigdata">
+    <link rel="alternate" type="application/rss+xml" title="昇思MindSpore最新文章"
+        href="https://www.oschina.net/groups/rss?ident=mindspore">
+    <link rel="alternate" type="application/rss+xml" title="摸鱼专区最新文章"
+        href="https://www.oschina.net/groups/rss?ident=fishfish">
+    <link rel="alternate" type="application/rss+xml" title="华为开发者联盟最新文章"
+        href="https://www.oschina.net/groups/rss?ident=huawei">
+    <link rel="alternate" type="application/rss+xml" title="PostgreSQL最新文章"
+        href="https://www.oschina.net/groups/rss?ident=postgresql">
+    <link rel="alternate" type="application/rss+xml" title="Linux基金会开源软件大学最新文章"
+        href="https://www.oschina.net/groups/rss?ident=lfossu">
+    <link rel="alternate" type="application/rss+xml" title="OSCTraining最新文章"
+        href="https://www.oschina.net/groups/rss?ident=OSCTraining">
+    <link rel="alternate" type="application/rss+xml" title="EdgeX 中文社区最新文章"
+        href="https://www.oschina.net/groups/rss?ident=edgex-foundry">
+    <link rel="alternate" type="application/rss+xml" title="鲲鹏专区最新文章"
+        href="https://www.oschina.net/groups/rss?ident=kunpeng">
+    <link rel="alternate" type="application/rss+xml" title="openEuler最新文章"
+        href="https://www.oschina.net/groups/rss?ident=openEuler">
+    <link rel="alternate" type="application/rss+xml" title="信息安全最新文章"
+        href="https://www.oschina.net/groups/rss?ident=cyber-security">
+    <link rel="alternate" type="application/rss+xml" title="运维最新文章" href="https://www.oschina.net/groups/rss?ident=ops">
+    <link rel="alternate" type="application/rss+xml" title="软件测试最新文章"
+        href="https://www.oschina.net/groups/rss?ident=test">
+    <link rel="alternate" type="application/rss+xml" title="网络技术最新文章"
+        href="https://www.oschina.net/groups/rss?ident=network">
+    <link rel="alternate" type="application/rss+xml" title="游戏开发最新文章"
+        href="https://www.oschina.net/groups/rss?ident=game">
+    <link rel="alternate" type="application/rss+xml" title="多媒体处理最新文章"
+        href="https://www.oschina.net/groups/rss?ident=media">
+    <link rel="alternate" type="application/rss+xml" title="DevOps最新文章"
+        href="https://www.oschina.net/groups/rss?ident=devops">
+    <link rel="alternate" type="application/rss+xml" title="区块链最新文章"
+        href="https://www.oschina.net/groups/rss?ident=blockchain">
+
+    <script type="text/javascript"
+        src="https://static.oschina.net/new-osc/js/utils/plugins/radarChart/radarChart.js"></script>
+    <script type="text/javascript" src="https://static.oschina.net/new-osc/js/utils/vue.min.js"></script>
+    <script type="text/javascript" src="https://static.oschina.net/new-osc/js/utils/vue.min.js"></script><input
+        type="hidden" id="_w_simile" data-inspect-config="3">
+    <script type="text/javascript"
+        src="chrome-extension://dbjbempljhcmhlfpfacalomonjpalpko/scripts/inspector.js"></script>
+    <script type="text/javascript"
+        src="https://static.oschina.net/new-osc/js/utils/plugins/caret/jquery.caret.min.js"></script>
+    <script type="text/javascript"
+        src="https://static.oschina.net/new-osc/js/utils/plugins/caret/jquery.caret.min.js"></script>
+    <script type="text/javascript"
+        src="https://static.oschina.net/new-osc/js/utils/plugins/atwho/jquery.atwho.min.js"></script>
+    <script type="text/javascript"
+        src="https://static.oschina.net/new-osc/js/utils/plugins/atwho/jquery.atwho.min.js"></script>
+</head>
+
+<body class="osc-new-layout page-web-new-index">
+    
+    <div name="global_header" data-traceid="global_header" data-tracepid="global_header">
+        <!-- global_header -->
+
+        <style type="text/css">
+            .editormd:not(.editormd-fullscreen) {
+                z-index: 1 !important;
+            }
+
+            .osc-new-layout .ui.visible.uncover.sidebar {
+                z-index: 3;
+            }
+
+            .osc-new-layout .entry-list-box .comments-box .comments-box__list1 .comment-list .comment-item__content img,
+            .osc-new-layout .osc-comments-modal .comments-box .comments-box__list .comment-list .comment-item__content img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .page-web-new-index .index-container .panel-box--recommend-user .user-list-box--column .user-item__header a {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+
+            .osc-new-layout.page-web-new-index .index-container .channel-container .sidebar-box__inner .sidebar-section.section-gitee-update .project-update-box .project-update-list .project-update-item__header .name {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-width: 130px;
+                vertical-align: -0.28em;
+            }
+
+            /*
+.index-tweets-widget .tweet-item > .content-wrap .content .text,
+.tweet-detail-page .tweet-comments .comment .content>.text,
+.space-home .space-list-container .item .description { overflow: hidden; }
+
+body {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+  -webkit-filter: grayscale(1);
+}
+
+@media only screen and (min-width: 768px) {
+  .page-web-index {
+    min-width: 1200px;
+    overflow-x: hidden !important;
+  }
+}
+*/
+        </style>
+    </div>
+
+
+    <val data-name="site_url" data-value="https://www.oschina.net"></val>
+    <val data-name="space_user_url" data-value=""></val>
+    <val data-name="space_user_id" data-value=""></val>
+    <val data-name="g_user_url" data-value=""></val>
+    <val data-name="api_prefix" data-value=""></val>
+    <val data-name="g_user_code" data-value=""></val>
+    <val data-name="g_user_id" data-value=""></val>
+    <val data-name="g_user_bind_phone" data-value="false"></val>
+    <val data-name="g_user_name" data-value=""></val>
+    <val data-name="g_user_small_portrait" data-value="https://www.oschina.net/new-osc/img/portrait.gif"></val>
+    <val data-name="g_user_large_portrait" data-value="https://www.oschina.net/new-osc/img/portrait.gif"></val>
+    <val data-name="g_user_osc_staff" data-value="false"></val>
+    <val data-name="login_page"
+        data-value="https://www.oschina.net/home/login?goto_page=https%3A%2F%2Fwww.oschina.net%2F"></val>
+    <val data-name="weixinAppId" data-value="wx880def15e694b905"></val>
+    <val data-name="weixinTimestamp" data-value="1664630654336"></val>
+    <val data-name="weixinNonceStr" data-value="3b1b6ea3-217e-404f-95c7-65f08d3e8079"></val>
+    <val data-name="weixinSignature" data-value="1ca3647ec1323fcd9969a130262d61964bb508ad"></val>
+    <val data-name="weixinShareUrl" data-value="https://www.oschina.net/"></val>
+    <val data-name="is_detail_page" data-value="false"></val>
+
+    <val data-name="fixedHeaderHeight" data-value="72"></val>
+    <val data-name="secondaryHeaderEnable" data-value=""></val>
+
+    <val data-name="rocommendGrayStatus" data-value="true"></val>
+
+    <div class="pusher">
+        <div class="header-box header-box--compact header-box--fixed">
+            <div class="header-box__wrapper">
+                <div class="header-box__inner">
+                    <a class="logo" href="https://www.oschina.net" aria-label="OSCHINA" title="OSCHINA">
+                        <svg width="155" height="44" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                                <g>
+                                    <circle fill="#21B351" cx="22" cy="22" r="22"></circle>
+                                    <path
+                                        d="M21.63 27.27c-2.926.02-5.312-1.89-5.472-5.454-.16-3.325 2.766-5.555 5.552-5.614 3.207-.08 5.132 3.583 5.132 3.583l8.278-3.046S31.712 7.92 22.492 7.92c-8.619 0-14.572 5.972-14.572 14.075 0 7.207 5.612 14.393 14.372 14.075 9.62-.359 12.908-8.82 12.908-8.82l-8.499-2.806c.02-.04-1.723 2.826-5.07 2.826"
+                                        fill="#FFF"></path>
+                                </g>
+                                <path
+                                    d="M62.957 27.5c3.1 0 4.588-2.583 4.588-5.5 0-2.893-1.537-5.5-4.588-5.5s-4.59 2.607-4.59 5.5c0 2.917 1.49 5.5 4.59 5.5zm0 3.3c-4.955 0-8.397-3.85-8.397-8.8 0-4.974 3.417-8.8 8.397-8.8 4.906 0 8.396 3.946 8.396 8.8 0 4.95-3.393 8.8-8.396 8.8zm15.402-17.6c1.366 0 4.784.502 4.784 2.391 0 .933-.635 1.77-1.636 1.77-1 0-1.782-.718-3.246-.718-1.05 0-2.002.55-2.002 1.555 0 2.463 8.153.885 8.153 7.054 0 3.42-2.88 5.548-6.249 5.548-1.88 0-5.931-.43-5.931-2.678 0-.933.635-1.698 1.635-1.698 1.148 0 2.514.933 4.101.933 1.611 0 2.49-.885 2.49-2.057 0-2.822-8.153-1.124-8.153-6.672 0-3.348 2.807-5.428 6.054-5.428zM85.29 22c0-4.974 3.417-8.8 8.396-8.8 1.782 0 5.248.574 5.248 2.678 0 .861-.61 1.602-1.513 1.602-1.001 0-1.684-.837-3.735-.837-3.026 0-4.589 2.511-4.589 5.429 0 2.845 1.587 5.285 4.59 5.285 2.05 0 2.88-1.005 3.88-1.005 1.099 0 1.611 1.076 1.611 1.626 0 2.296-3.686 2.822-5.492 2.822-4.955 0-8.396-3.85-8.396-8.8zm15.597 6.791V15.21c0-1.196.78-1.866 1.83-1.866s1.831.67 1.831 1.866v5.07h7.664v-5.07c0-1.196.782-1.866 1.831-1.866 1.05 0 1.83.67 1.83 1.866V28.79c0 1.196-.78 1.866-1.83 1.866s-1.83-.67-1.83-1.866v-5.213h-7.665v5.213c0 1.196-.78 1.866-1.83 1.866s-1.831-.67-1.831-1.866zm17.184 0V15.21c0-1.196.78-1.866 1.83-1.866s1.83.67 1.83 1.866V28.79c0 1.196-.78 1.866-1.83 1.866s-1.83-.67-1.83-1.866zm5.711 0V15.21c0-1.196.781-1.866 1.83-1.866.465 0 1.221.36 1.539.79l7.737 10.115h.049v-9.04c0-1.195.781-1.865 1.83-1.865 1.05 0 1.831.67 1.831 1.866V28.79c0 1.196-.78 1.866-1.83 1.866-.464 0-1.196-.36-1.538-.79l-7.738-9.995h-.048v8.92c0 1.195-.782 1.865-1.831 1.865-1.05 0-1.83-.67-1.83-1.866zm15.988-.598l4.906-13.008c.415-1.1 1.367-1.985 2.612-1.985 1.294 0 2.197.837 2.612 1.985l4.784 13.008c.146.383.195.718.195.885 0 .933-.781 1.579-1.684 1.579-1.025 0-1.538-.527-1.782-1.244l-.732-2.248h-6.786l-.732 2.224c-.244.741-.757 1.268-1.758 1.268-.976 0-1.806-.718-1.806-1.674 0-.383.122-.67.171-.79zm7.493-11.263l-2.318 6.935h4.637l-2.27-6.935h-.049z"
+                                    fill="#111" fill-rule="nonzero"></path>
+                            </g>
+                        </svg> </a>
+                    <div class="nav-bar" role="navigation">
+                        <ul class="nav-bar__tabs">
+
+                            <li class="tabs-item tabs-item--new tabs-item--new-show">
+                                <a href="https://gitee.com/explore?utm_source=oschina&amp;utm_medium=link-index&amp;utm_campaign=home"
+                                    target="_blank" class="tabs-link gitee">Gitee</a>
+                            </li>
+                            <li class="tabs-item">
+                                <a href="https://www.oschina.net/news" class="tabs-link news">资讯</a>
+                            </li>
+                            <li class="tabs-item">
+                                <a href="https://www.oschina.net/action/visit/ad?id=1447" style="color: #22b250"
+                                    target="_blank" class="tabs-link gallery">摸鱼</a>
+                            </li>
+                            <li class="tabs-item">
+                                <a href="https://www.oschina.net/groups" class="tabs-link group">专区</a>
+                            </li>
+                            <li class="tabs-item">
+                                <a href="https://www.oschina.net/question" class="tabs-link question">问答</a>
+                            </li>
+                            <li class="tabs-item pdfTab">
+                                <a class="tabs-link">开源观止<i class="dropdown icon"></i></a>
+                                <div class="menu pdfMenu" style="margin: -12px 0px; display: none;">
+                                    <a class="item" href="https://www.oschina.net/action/visit/ad?id=1443">2022年 6月刊</a>
+                                    <a class="item" href="https://www.oschina.net/action/visit/ad?id=1454">2022年 7月刊</a>
+                                    <a class="item" href="https://www.oschina.net/action/visit/ad?id=1464">2022年 8月刊</a>
+                                    <a class="item" href="https://www.oschina.net/action/visit/ad?id=1470">2022年 9月刊</a>
+                                </div>
+                            </li>
+                            <li class="tabs-item">
+                                <a href="https://www.oschina.net/event" class="tabs-link event">活动</a>
+                            </li>
+                            <li class="tabs-item">
+                                <a href="https://www.oschina.net/project" class="tabs-link project">软件库</a>
+                            </li>
+                            <li class="tabs-item">
+                                <a href="https://tool.oschina.net/" class="tabs-link explore">Tool</a>
+                            </li>
+                            <li class="tabs-item">
+                                <a href="https://www.oschina.net/blog" class="tabs-link blog">博客</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search-circle-box">
+                        <form action="https://www.oschina.net/search" role="search">
+                            <div class="search-circle-box__inner">
+                                <input type="hidden" name="identification" value="1664630654336">
+                                <input type="hidden" name="scope" value="all">
+                                <input class="search-circle-box__input" aria-label="搜索" placeholder="大家都在搜..." name="q"
+                                    value="" type="text" required="">
+                                <button type="submit" class="search-circle-box__button"><i
+                                        class="search icon"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="user-bar">
+                        <ul class="user-bar__links">
+                            <a class="item icon app-download btnDownloadTop" title="OSC小程序"><i
+                                    class="oicon oicon-phone"></i></a>
+                            <div class="ui popup top left transition btnDownloadTopContent hidden" style="width: 200px">
+                                <h3 class="header">OSCHINA 小程序 —— <br>关注技术领域的头条文章</h3>
+                                <p>聚合全网技术文章，根据你的阅读喜好进行个性推荐</p>
+                                <img width="200"
+                                    src="https://oscimg.oschina.net/oscnet/up-91f008637a179c217fdec464b7bad202844.jpg"
+                                    alt="OSC小程序">
+                            </div>
+
+                            <a class="item"
+                                href="https://www.oschina.net/home/login?goto_page=https%3A%2F%2Fwww.oschina.net%2F">登录</a>
+                            <a class="item"
+                                href="https://www.oschina.net/home/reg?goto_page=https%3A%2F%2Fwww.oschina.net%2F">注册</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div id="mainScreen">
+
+            <div class="home-container">
+                <x-foo-define data-define="web-new-index"></x-foo-define>
+                <val data-name="entryListAutoUpdateInterval" data-value="300"></val>
+                <val data-name="entryListUpdateMaxCount" data-value="10"></val>
+                <val data-name="asideGroupUpdateInterval" data-value="120"></val>
+                <val data-name="enableScopeSelect" data-value="true"></val>
+                <val data-name="defaultTab" data-value="channel"></val>
+                <val data-name="currentTab" data-value="channel"></val>
+                <div class="index-container aside-container">
+
+                    <div class="box-container">
+
+
+                        <div class="body-box">
+
+
+                            <div class="body-box__content">
+                                <div class="inner-container">
+                                    <div class="inner-container__loader ui inverted dimmer">
+                                        <div class="loader-wrap">
+                                            <div class="ui text loader">加载中</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="inner-container__inner">
+
+
+                                        <div class="box-container channel-container">
+                                            <div class="main-box">
+                                                <div class="main-box__inner">
+                                                    <div class="content-box box-card box-card--shadow">
+                                                        <div class="content-box__inner">
+                                                            <div id="v_news" class="panel-box panel-box--news">
+                                                                <div class="panel-content">
+                                                                    <div class="panel-content__column news-panel"
+                                                                        style="max-height: 410px;">
+                                                                        <div class="panel-header">
+                                                                            <div class="panel-header-title"><a
+                                                                                    href="/news/industry"
+                                                                                    title="综合资讯">综合资讯</a></div>
+                                                                            <div class="panel-header-tabs"><span
+                                                                                    class="tab active"></span> <span
+                                                                                    class="tab"></span> <span
+                                                                                    class="tab"></span></div> <a
+                                                                                href="/news/industry" title="更多综合资讯"
+                                                                                class="panel-header-link panel-header-link--gray">更多</a>
+                                                                        </div>
+                                                                        <div class="headline">
+                                                                            <div class="head-news"><a
+                                                                                    href="https://www.oschina.net/news/211226/framework-chromebook"
+                                                                                    target="_blank"
+                                                                                    title="Google 推出模块化 Chromebook，起售价 1000 美元"
+                                                                                    class="head-news-title">Google 推出模块化
+                                                                                    Chromebook，起售价 1000 美元</a>
+                                                                                <p class="head-news-content">
+                                                                                    除了可以自行选择接口，Framework Laptop
+                                                                                    Chromebook 还可以更换电脑边框（以磁吸方式固定）...</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="tab-page">
+                                                                            <div class="item-list">
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212362/nvidia-arm-and-intel-publish-fp8-specification"
+                                                                                        title="NVIDIA / Arm /Intel 联合发布 FP8 标准化规范，作为 AI 的可交换格式"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">NVIDIA
+                                                                                        / Arm /Intel 联合发布 FP8 标准化规范，作为
+                                                                                        AI 的可交换格式</a>
+                                                                                    <div class="item-extra">08:43</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212360/2022-web-tech-survey-web-almanac"
+                                                                                        title="调查报告表明 WebAssembly 可能被过度炒作"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">调查报告表明
+                                                                                        WebAssembly 可能被过度炒作</a>
+                                                                                    <div class="item-extra">08:32</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212359/fedora-38-faster-gnutls-ktls"
+                                                                                        title="Fedora 38 确认使用 Kernel TLS 加速 GnuTLS"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Fedora
+                                                                                        38 确认使用 Kernel TLS 加速 GnuTLS</a>
+                                                                                    <div class="item-extra">08:22</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://my.oschina.net/koderover/blog/5581847"
+                                                                                        title="迎国庆 Zadig 发布 v1.15.0，更佳体验，更多安全，加速开放链接企业内外开发者"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">迎国庆
+                                                                                        Zadig 发布
+                                                                                        v1.15.0，更佳体验，更多安全，加速开放链接企业内外开发者</a>
+                                                                                    <div class="item-extra">08:17</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/p/dub"
+                                                                                        title="Dub —— 短链接工具"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Dub
+                                                                                        —— 短链接工具</a>
+                                                                                    <div class="item-extra">08:11</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://gitee.com/featureprobe/FeatureProbe"
+                                                                                        title="Gitee 推荐 | 功能粒度灰度发布平台 FeatureProbe"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Gitee
+                                                                                        推荐 | 功能粒度灰度发布平台 FeatureProbe</a>
+                                                                                    <div class="item-extra">08:09</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://my.oschina.net/u/4939618/blog/5580745"
+                                                                                        title="每日一博 | YYEVA 动效播放器， 动态元素完美呈现的新方案"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">每日一博
+                                                                                        | YYEVA 动效播放器， 动态元素完美呈现的新方案</a>
+                                                                                    <div class="item-extra">08:04</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212318"
+                                                                                        title="【SIG月报】9 月 openKylin 社区 SIG 组最新进展分享"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">【SIG月报】9
+                                                                                        月 openKylin 社区 SIG 组最新进展分享</a>
+                                                                                    <div class="item-extra">18:20</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212312/istio-sails-into-cncf"
+                                                                                        title="Istio 成为 CNCF 孵化项目"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Istio
+                                                                                        成为 CNCF 孵化项目</a>
+                                                                                    <div class="item-extra">17:12</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212311"
+                                                                                        title="Alluxio 与北京大学计算机学院签署合作框架协议，推动产学研深度融合"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Alluxio
+                                                                                        与北京大学计算机学院签署合作框架协议，推动产学研深度融合</a>
+                                                                                    <div class="item-extra">17:05</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/211125"
+                                                                                        title="Apache Kafka 拒绝服务漏洞"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary visited">Apache
+                                                                                        Kafka 拒绝服务漏洞</a>
+                                                                                    <div class="item-extra"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="tab-page" style="display: none;">
+                                                                            <div class="item-list">
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212236/gnu-toolchain-infrastructure-project"
+                                                                                        title="GNU 工具链将从 Sourceware 转移，托管在 Linux 基金会旗下"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">GNU
+                                                                                        工具链将从 Sourceware 转移，托管在 Linux
+                                                                                        基金会旗下</a>
+                                                                                    <div class="item-extra">09:22</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212228/penpot-raises-8m-a-round-fund"
+                                                                                        title="Figma 开源替代品 Penpot 获 800 万美元 A 轮融资"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Figma
+                                                                                        开源替代品 Penpot 获 800 万美元 A 轮融资</a>
+                                                                                    <div class="item-extra">08:51</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212227/google-shutting down-stadia"
+                                                                                        title="谷歌关闭其 Stadia 云游戏流媒体服务"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">谷歌关闭其
+                                                                                        Stadia 云游戏流媒体服务</a>
+                                                                                    <div class="item-extra">08:45</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212226/cloudflare-workerd-open-source"
+                                                                                        title="Cloudflare 推出 workerd，开源 JavaScript/Wasm 运行时"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Cloudflare
+                                                                                        推出 workerd，开源 JavaScript/Wasm
+                                                                                        运行时</a>
+                                                                                    <div class="item-extra">08:44</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212225/unofficial-keepassxc-microsoft-store"
+                                                                                        title="提高警惕，山寨 KeePassXC 应用上架微软商店"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">提高警惕，山寨
+                                                                                        KeePassXC 应用上架微软商店</a>
+                                                                                    <div class="item-extra">08:23</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://my.oschina.net/u/3742410/blog/5581588"
+                                                                                        title="从 Model-Centric 到 Data-Centric，MLOps 帮助 AI 多快好省的落地"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">从
+                                                                                        Model-Centric 到
+                                                                                        Data-Centric，MLOps 帮助 AI
+                                                                                        多快好省的落地</a>
+                                                                                    <div class="item-extra">08:20</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/p/xtreme1"
+                                                                                        title="Xtreme1 —— 多模态训练数据平台"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Xtreme1
+                                                                                        —— 多模态训练数据平台</a>
+                                                                                    <div class="item-extra">08:14</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://gitee.com/iflytek/NetAxe"
+                                                                                        title="Gitee 推荐 | 开源网络自动化平台 NetAxe"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Gitee
+                                                                                        推荐 | 开源网络自动化平台 NetAxe</a>
+                                                                                    <div class="item-extra">08:09</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://my.oschina.net/vivotech/blog/5580732"
+                                                                                        title="每日一博 | Dubbo 泛化调用在 vivo 统一配置系统的应用"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">每日一博
+                                                                                        | Dubbo 泛化调用在 vivo 统一配置系统的应用</a>
+                                                                                    <div class="item-extra">08:01</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212069/fedora-disable-va-api"
+                                                                                        title="因法律问题，Fedora 禁用 Mesa 的 H.264 / H.265 / VC1 VA-API 支持"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">因法律问题，Fedora
+                                                                                        禁用 Mesa 的 H.264 / H.265 / VC1
+                                                                                        VA-API 支持</a>
+                                                                                    <div class="item-extra">08:51</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/211001"
+                                                                                        title="Onedev v7.4.14 路径遍历漏洞分析（CVE-2022-38301）"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary visited">Onedev
+                                                                                        v7.4.14
+                                                                                        路径遍历漏洞分析（CVE-2022-38301）</a>
+                                                                                    <div class="item-extra"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="tab-page" style="display: none;">
+                                                                            <div class="item-list">
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212068/volvo-rust-in-your-car"
+                                                                                        title="沃尔沃技术专家：Rust 很有用，计划在公司内部扩展 Rust"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">沃尔沃技术专家：Rust
+                                                                                        很有用，计划在公司内部扩展 Rust</a>
+                                                                                    <div class="item-extra">08:41</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212066/linus-rust-will-go-into-linux-6-1"
+                                                                                        title="Linus Torvalds：Rust 将被合并到 Linux 6.1 主线"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Linus
+                                                                                        Torvalds：Rust 将被合并到 Linux 6.1
+                                                                                        主线</a>
+                                                                                    <div class="item-extra">08:22</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212065/opera-and-360-agree-share-repurchase"
+                                                                                        title="Opera 将回购 360 手中股份"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Opera
+                                                                                        将回购 360 手中股份</a>
+                                                                                    <div class="item-extra">08:16</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/p/spicedb"
+                                                                                        title="SpiceDB —— 开源细粒度权限数据库"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">SpiceDB
+                                                                                        —— 开源细粒度权限数据库</a>
+                                                                                    <div class="item-extra">08:15</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://gitee.com/QQxiaoming/quard_star_tutorial"
+                                                                                        title="Gitee 推荐 | 基于 qemu 从 0 构建的嵌入式 Linux 系统"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Gitee
+                                                                                        推荐 | 基于 qemu 从 0 构建的嵌入式 Linux
+                                                                                        系统</a>
+                                                                                    <div class="item-extra">08:13</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://my.oschina.net/vivotech/blog/5580441"
+                                                                                        title="每日一博 | 前端动效讲解与实战"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">每日一博
+                                                                                        | 前端动效讲解与实战</a>
+                                                                                    <div class="item-extra">08:04</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://my.oschina.net/shoumenchougou/blog/5580867"
+                                                                                        title="开源项目通往 Apache 的独门秘籍"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">开源项目通往
+                                                                                        Apache 的独门秘籍</a>
+                                                                                    <div class="item-extra">14:31</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/211946/free-software-awards-2022"
+                                                                                        title="FSF 2022 年自由软件奖提名已开启"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">FSF
+                                                                                        2022 年自由软件奖提名已开启</a>
+                                                                                    <div class="item-extra">08:45</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/211945/linux-amd-old-chipset-wa"
+                                                                                        title="20 年前的芯片组解决方案一直在伤害现代 AMD Linux 系统"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">20
+                                                                                        年前的芯片组解决方案一直在伤害现代 AMD Linux
+                                                                                        系统</a>
+                                                                                    <div class="item-extra">08:43</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/211943/linux-compile-on-macos"
+                                                                                        title="谷歌 Linux 内核开发者使用 macOS 编译 ARM64 Linux 内核"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">谷歌
+                                                                                        Linux 内核开发者使用 macOS 编译 ARM64
+                                                                                        Linux 内核</a>
+                                                                                    <div class="item-extra">08:30</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212005"
+                                                                                        title="vim/vim <9.0.0598 缓冲区溢出漏洞"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary visited">vim/vim
+                                                                                        &lt;9.0.0598 缓冲区溢出漏洞</a>
+                                                                                    <div class="item-extra"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="panel-content__column news-panel"
+                                                                        style="max-height: 410px;">
+                                                                        <div class="panel-header">
+                                                                            <div class="panel-header-title"><a
+                                                                                    href="/news/project"
+                                                                                    title="软件更新资讯">软件更新资讯</a></div>
+                                                                            <div class="panel-header-tabs"><span
+                                                                                    class="tab"></span> <span
+                                                                                    class="tab active"></span> <span
+                                                                                    class="tab"></span></div> <a
+                                                                                href="/news/project" title="更多软件更新资讯"
+                                                                                class="panel-header-link panel-header-link--gray">更多</a>
+                                                                        </div>
+                                                                        <div class="headline">
+                                                                            <div class="head-news"><a
+                                                                                    href="https://www.oschina.net/news/212059/pyston-2-3-5-released"
+                                                                                    target="_blank"
+                                                                                    title="Pyston 2.3.5 发布，比 Python 更快的开源替代实现"
+                                                                                    class="head-news-title">Pyston 2.3.5
+                                                                                    发布，比 Python 更快的开源替代实现</a>
+                                                                                <p class="head-news-content">Pyston
+                                                                                    2.3.5 已发布。此版本显著提升了性能，优化与上游 CPython
+                                                                                    的兼容性。 Pyston 最初是由 Dropbox ...</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="tab-page" style="display: none;">
+                                                                            <div class="item-list">
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212365"
+                                                                                        title="kplayer v0.5.7 版本发布，更适合云服务器直播的推流工具"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">kplayer
+                                                                                        v0.5.7 版本发布，更适合云服务器直播的推流工具</a>
+                                                                                    <div class="item-extra">10:21</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212355/ubuntu-22-10-beta-released"
+                                                                                        title="Ubuntu 22.10 Beta 现已可供下载"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Ubuntu
+                                                                                        22.10 Beta 现已可供下载</a>
+                                                                                    <div class="item-extra">08:08</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212353/rabbitmq-3-11-0-released"
+                                                                                        title="RabbitMQ 3.11.0 已发布"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">RabbitMQ
+                                                                                        3.11.0 已发布</a>
+                                                                                    <div class="item-extra">07:59</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212352/ckeditor-4-20-released"
+                                                                                        title="CKEditor 4.20 发布：优化编辑体验、增强表头功能"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">CKEditor
+                                                                                        4.20 发布：优化编辑体验、增强表头功能</a>
+                                                                                    <div class="item-extra">07:54</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212349/jina-ai-3-10-released"
+                                                                                        title="Jina-AI 3.10 发布，云原生神经搜索框架"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Jina-AI
+                                                                                        3.10 发布，云原生神经搜索框架</a>
+                                                                                    <div class="item-extra">07:46</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212348/kangaroo-1-99-released"
+                                                                                        title="袋鼠数据库管理工具 1.99 已发布"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">袋鼠数据库管理工具
+                                                                                        1.99 已发布</a>
+                                                                                    <div class="item-extra">07:45</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212347/dubbo-3-1-1-released"
+                                                                                        title="Apache Dubbo 3.1.1 发布，分布式 RPC 服务框架"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Apache
+                                                                                        Dubbo 3.1.1 发布，分布式 RPC 服务框架</a>
+                                                                                    <div class="item-extra">07:41</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212346/deno-1-26-released"
+                                                                                        title="Deno 1.26 发布，新增CacheWeb API、提升性能"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Deno
+                                                                                        1.26 发布，新增CacheWeb API、提升性能</a>
+                                                                                    <div class="item-extra">07:36</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212345/glide-4-14-released"
+                                                                                        title="Glide v4.14.0 发布，Android 图片加载和缓存库"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Glide
+                                                                                        v4.14.0 发布，Android 图片加载和缓存库</a>
+                                                                                    <div class="item-extra">07:34</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212343"
+                                                                                        title="EasyGoAdmin 敏捷开发框架 Gin+Layui 版本 v2.1.2 发布"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">EasyGoAdmin
+                                                                                        敏捷开发框架 Gin+Layui 版本 v2.1.2
+                                                                                        发布</a>
+                                                                                    <div class="item-extra">07:26</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/211960"
+                                                                                        title="OSCS开源安全周报第12期：加密货币交易平台的多个组件被投毒"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary visited">OSCS开源安全周报第12期：加密货币交易平台的多个组件被投毒</a>
+                                                                                    <div class="item-extra"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="tab-page" style="">
+                                                                            <div class="item-list">
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212322/jianmu-2-5-6-released"
+                                                                                        title="建木 v2.5.6 发布"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">建木
+                                                                                        v2.5.6 发布</a>
+                                                                                    <div class="item-extra">19:54</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212319/goedge-0-5-5-released"
+                                                                                        title="GoEdge CDN v0.5.5 发布，修复 Bug、优化加载速度"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">GoEdge
+                                                                                        CDN v0.5.5 发布，修复 Bug、优化加载速度</a>
+                                                                                    <div class="item-extra">19:15</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212317"
+                                                                                        title="Torna v1.17.1 发布，企业接口文档解决方案"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Torna
+                                                                                        v1.17.1 发布，企业接口文档解决方案</a>
+                                                                                    <div class="item-extra">18:17</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212315"
+                                                                                        title="layui-vue 1.5.1 发布，Vue Layui 组件库"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">layui-vue
+                                                                                        1.5.1 发布，Vue Layui 组件库</a>
+                                                                                    <div class="item-extra">17:41</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212276/snowy-2-0-released"
+                                                                                        title="小诺 Snowy 2.0 霸气发布，不看后悔！"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">小诺
+                                                                                        Snowy 2.0 霸气发布，不看后悔！</a>
+                                                                                    <div class="item-extra">13:40</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212263/ruoyi-cloud-3-6-1-released"
+                                                                                        title="RuoYi-Cloud 3.6.1 发布，更多细节优化"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">RuoYi-Cloud
+                                                                                        3.6.1 发布，更多细节优化</a>
+                                                                                    <div class="item-extra">11:32</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212250/jboot-3-16-1-released"
+                                                                                        title="国庆节快乐，Jboot v3.16.1 发布"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">国庆节快乐，Jboot
+                                                                                        v3.16.1 发布</a>
+                                                                                    <div class="item-extra">10:23</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212243"
+                                                                                        title="凹语言支持 Notepad++ 语法高亮"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">凹语言支持
+                                                                                        Notepad++ 语法高亮</a>
+                                                                                    <div class="item-extra">10:02</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212238/mrdoc-0-8-3-released"
+                                                                                        title="MrDoc 0.8.3 发布，类似语雀、飞书的开源知识库系统"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">MrDoc
+                                                                                        0.8.3 发布，类似语雀、飞书的开源知识库系统</a>
+                                                                                    <div class="item-extra">09:31</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212221/qt-6-4-released"
+                                                                                        title="Qt 6.4 正式发布，添加 http 服务器、物理、光线等大量新模块"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Qt
+                                                                                        6.4 正式发布，添加 http
+                                                                                        服务器、物理、光线等大量新模块</a>
+                                                                                    <div class="item-extra">08:07</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/211403"
+                                                                                        title="从近期欧美法规看软件供应链安全趋势"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary visited">从近期欧美法规看软件供应链安全趋势</a>
+                                                                                    <div class="item-extra"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="tab-page" style="display: none;">
+                                                                            <div class="item-list">
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212219/vs-for-mac-17-4-preview-2-1-released"
+                                                                                        title="Visual Studio for Mac 17.4 Preview 2.1 发布"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Visual
+                                                                                        Studio for Mac 17.4 Preview 2.1
+                                                                                        发布</a>
+                                                                                    <div class="item-extra">07:44</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212218/kotlin-1-7-20-released"
+                                                                                        title="Kotlin 1.7.20 发布"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Kotlin
+                                                                                        1.7.20 发布</a>
+                                                                                    <div class="item-extra">07:31</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212217/plasma-mobile-gear-22-09-released"
+                                                                                        title="Plasma Mobile Gear 22.09 发布"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Plasma
+                                                                                        Mobile Gear 22.09 发布</a>
+                                                                                    <div class="item-extra">07:19</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212216/pale-moon-31-3-0-released"
+                                                                                        title="Pale Moon 31.3.0 发布，苍月浏览器"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Pale
+                                                                                        Moon 31.3.0 发布，苍月浏览器</a>
+                                                                                    <div class="item-extra">07:18</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212215/vulkan-1-3-230-released"
+                                                                                        title="Vulkan 1.3.230 发布，包含六个新扩展"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Vulkan
+                                                                                        1.3.230 发布，包含六个新扩展</a>
+                                                                                    <div class="item-extra">07:10</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212214/ant-design-4-23-3-released"
+                                                                                        title="Ant Design 4.23.3 发布，企业级 UI 设计语言和 React 实现"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">Ant
+                                                                                        Design 4.23.3 发布，企业级 UI 设计语言和
+                                                                                        React 实现</a>
+                                                                                    <div class="item-extra">07:02</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212180"
+                                                                                        title="英特尔® 发行版 OpenVINO™ 工具套件 2022.2 版本更新"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">英特尔®
+                                                                                        发行版 OpenVINO™ 工具套件 2022.2
+                                                                                        版本更新</a>
+                                                                                    <div class="item-extra">19:35</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212122"
+                                                                                        title="RuoYi-Cloud-Plus 发布 1.3.0，源码集成 Nacos 控制台"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">RuoYi-Cloud-Plus
+                                                                                        发布 1.3.0，源码集成 Nacos 控制台</a>
+                                                                                    <div class="item-extra">13:26</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212104"
+                                                                                        title="禅道 17.6.2 发布，更新禅道蓝、青春蓝、叶兰绿三大主题"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">禅道
+                                                                                        17.6.2 发布，更新禅道蓝、青春蓝、叶兰绿三大主题</a>
+                                                                                    <div class="item-extra">11:03</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/212098/jpress-5-0-3-released"
+                                                                                        title="一个安全舒适的 CMS，JPress v5.0.3 发布"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary  visited  ">一个安全舒适的
+                                                                                        CMS，JPress v5.0.3 发布</a>
+                                                                                    <div class="item-extra">10:39</div>
+                                                                                </div>
+                                                                                <div class="item"><a
+                                                                                        href="https://www.oschina.net/news/211126"
+                                                                                        title="Grafana 权限提升漏洞"
+                                                                                        target="_blank"
+                                                                                        class="item-title primary visited">Grafana
+                                                                                        权限提升漏洞</a>
+                                                                                    <div class="item-extra"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="panel-box panel-box--group-nav">
+                                                                <div class="panel-content">
+                                                                    <div class="group-nav-box">
+                                                                        <div class="group-nav-box__inner">
+                                                                            <div class="group-nav-box__brand">
+                                                                                <div class="group-nav-box__header">
+                                                                                    <div class="title">品牌专区</div>
+                                                                                    <div class="extra"></div>
+                                                                                </div>
+                                                                                <div class="link-list">
+                                                                                    <a class="link-item__brand"
+                                                                                        href="https://www.oschina.net/action/visit/ad?id=1434"
+                                                                                        title="华为开发者联盟" target="_blank">
+                                                                                        <img src="https://static.oschina.net/uploads/img/202008/26150206_XXzS.png"
+                                                                                            alt="">
+                                                                                        <span class="text">华为开发者联盟</span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="group-nav-box__recommend">
+                                                                                <div class="group-nav-box__header">
+                                                                                    <div class="title">推荐专区</div>
+                                                                                    <div class="extra"></div>
+                                                                                </div>
+                                                                                <div class="link-list">
+                                                                                    <div class="link-list__inner">
+                                                                                        <div class="link-item">
+                                                                                            <a class="link-item__inner"
+                                                                                                href="https://www.oschina.net/group/paddlepaddle"
+                                                                                                title="飞桨专区"
+                                                                                                target="_blank">
+                                                                                                <span
+                                                                                                    class="link-item__icon link-item__icon--large"><img
+                                                                                                        src="https://oscimg.oschina.net/oscnet/up-8c2c278c89999be12dd82a91603ba4bea5d.png"
+                                                                                                        alt=""></span>
+                                                                                                <span
+                                                                                                    class="link-item__text">飞桨专区</span>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div class="link-item">
+                                                                                            <a class="link-item__inner"
+                                                                                                href="https://www.oschina.net/group/openharmony"
+                                                                                                title="OpenHarmony专区"
+                                                                                                target="_blank">
+                                                                                                <span
+                                                                                                    class="link-item__icon"><img
+                                                                                                        src="https://oscimg.oschina.net/oscnet/up-9c9306c8e26e02d12dc606d1bc677022887.png"
+                                                                                                        alt=""></span>
+                                                                                                <span
+                                                                                                    class="link-item__text">OpenHarmony专区</span>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="group-nav-box__extra">
+                                                                                <div class="group-nav-box__header">
+                                                                                    <div class="title">技术专区</div>
+                                                                                    <div class="extra"><a
+                                                                                            href="https://www.oschina.net/groups"
+                                                                                            title="更多专区"
+                                                                                            target="_blank">更多</a></div>
+                                                                                </div>
+                                                                                <div class="link-list">
+                                                                                    <div class="link-list__inner">
+                                                                                        <div class="link-item">
+                                                                                            <a class="link-item__inner"
+                                                                                                href="https://www.oschina.net/group/unstructured-data"
+                                                                                                title="非结构化数据"
+                                                                                                target="_blank">
+                                                                                                <span
+                                                                                                    class="link-item__text">非结构化数据</span>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div class="link-item">
+                                                                                            <a class="link-item__inner"
+                                                                                                href="https://www.oschina.net/group/openvino"
+                                                                                                title="OpenVINO 中文社区"
+                                                                                                target="_blank">
+                                                                                                <span
+                                                                                                    class="link-item__text">OpenVINO
+                                                                                                    中文社区</span>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel-box panel-box--group-recommend">
+                                                                <div class="panel-content">
+                                                                    <div class="panel-content__column group-column"
+                                                                        data-group-id="28" data-group-type="3">
+                                                                        <div class="panel-header">
+                                                                            <div class="panel-header-icon"><a
+                                                                                    href="https://www.oschina.net/group/cross-front"
+                                                                                    title="大前端专区" target="_blank"><img
+                                                                                        src="https://static.oschina.net/uploads/img/202008/31180532_jX3A.png"
+                                                                                        alt=""></a></div>
+                                                                            <div class="panel-header-title"><a
+                                                                                    href="https://www.oschina.net/group/cross-front"
+                                                                                    title="大前端专区"
+                                                                                    target="_blank">大前端专区</a></div>
+                                                                            <div class="panel-header-extra"><a
+                                                                                    href="https://www.oschina.net/group/cross-front"
+                                                                                    title="84万人关注"
+                                                                                    target="_blank">84万人关注</a></div>
+                                                                        </div>
+                                                                        <div class="item-list">
+                                                                            <div class="item">
+                                                                                <a class="item-title" href="https://my.oschina.net/u/4939618/blog/5581371" target="_blank" title="爱番番企业查询结果优化实践" data-url="https://my.oschina.net/u/4939618/blog/5581371">爱番番企业查询结果优化实践</a>
+                                                                                <div class="item-extra">1.7K阅</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="panel-content__column group-column"
+                                                                        data-group-id="27" data-group-type="3">
+                                                                        <div class="panel-header">
+                                                                            <div class="panel-header-icon"><a
+                                                                                    href="https://www.oschina.net/group/skill"
+                                                                                    title="开发技能专区" target="_blank"><img
+                                                                                        src="https://static.oschina.net/uploads/img/202008/31180731_vRmf.png"
+                                                                                        alt=""></a></div>
+                                                                            <div class="panel-header-title"><a
+                                                                                    href="https://www.oschina.net/group/skill"
+                                                                                    title="开发技能专区"
+                                                                                    target="_blank">开发技能专区</a></div>
+                                                                            <div class="panel-header-extra"><a
+                                                                                    href="https://www.oschina.net/group/skill"
+                                                                                    title="84.1万人关注"
+                                                                                    target="_blank">84.1万人关注</a></div>
+                                                                        </div>
+                                                                        <div class="item-list">
+                                                                            <div class="item">
+                                                                                <a class="item-title"
+                                                                                href="https://my.oschina.net/u/5057806/blog/5581551"
+                                                                                target="_blank" title="深度解读7个场景，破解研发效能障碍"
+                                                                                data-url="https://my.oschina.net/u/5057806/blog/5581551">深度解读7个场景，破解研发效能障碍</a>
+                                                                                <div class="item-extra">1K阅</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="panel-box panel-box--recommend-user">
+                                                                <div class="panel-content">
+                                                                    <div class="panel-content__column">
+                                                                        <div class="panel-header">
+                                                                            <div class="panel-header-title">推荐机构号</div>
+                                                                            <a class="panel-header-link"
+                                                                                href="https://www.oschina.net/question/2918182_2316305"
+                                                                                title="申请成为机构号"
+                                                                                target="_blank">申请成为机构号</a>
+                                                                        </div>
+                                                                        <div class="user-list-box">
+                                                                            <div class="user-list">
+                                                                                <div class="user-item">
+                                                                                    <div class="user-item__inner">
+                                                                                        <div
+                                                                                            class="user-item__avatar user-item__avatar--square">
+                                                                                            <a href="https://my.oschina.net/HMSCore"
+                                                                                                target="_blank"
+                                                                                                title="HMS Core">
+                                                                                                <div class="osc-avatar small-portrait _40x40"
+                                                                                                    title="HMS Core"
+                                                                                                    data-user-id="4956408">
+                                                                                                    <img src="https://oscimg.oschina.net/oscnet/up-f755cbdaebdb971647b74e3c310c7438.jpg!/both/50x50?t=1611199087000"
+                                                                                                        alt="HMS Core"
+                                                                                                        title="HMS Core">
+                                                                                                </div>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div class="user-item__body">
+                                                                                            <div
+                                                                                                class="user-item__header">
+                                                                                                <a class="name"
+                                                                                                    href="https://my.oschina.net/HMSCore"
+                                                                                                    target="_blank"
+                                                                                                    title="HMS Core">HMS
+                                                                                                    Core</a><span
+                                                                                                    class="org-label org-label--simple primary"
+                                                                                                    data-tooltip="认证官方账号"><i
+                                                                                                        class="oicon oicon-org"></i></span>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="user-item__desc">
+                                                                                                文章 422</div>
+                                                                                        </div>
+                                                                                        <div class="user-item__article">
+                                                                                            <a href="https://my.oschina.net/HMSCore/blog/5377484"
+                                                                                                target="_blank"
+                                                                                                title="HMS Core Insights第九期直播预告——手语服务，助力沟通无障碍">HMS
+                                                                                                Core
+                                                                                                Insights第九期直播预告——手语服务，助力沟通无障碍</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="panel-content__column">
+                                                                        <div class="panel-header">
+                                                                            <div class="panel-header-title">热推博主</div>
+                                                                            <a class="panel-header-link"
+                                                                                href="https://www.oschina.net/sharing-plan"
+                                                                                title="马上入驻" target="_blank">马上入驻</a>
+                                                                        </div>
+                                                                        <div class="user-list-box user-list-box--column">
+                                                                            <div class="user-list">
+                                                                                <div class="user-item">
+                                                                                    <div class="user-item__inner">
+                                                                                        <div class="user-item__avatar">
+                                                                                            <a href="https://my.oschina.net/u/4489239"
+                                                                                                target="_blank" title="一君_">
+                                                                                                <div class="osc-avatar small-portrait _40x40"
+                                                                                                    title="一君_"
+                                                                                                    data-user-id="4489239">
+                                                                                                    <img src="https://oscimg.oschina.net/oscnet/up-88bb1e992960178ff201ef014fa58c2f.jpg!/both/50x50"
+                                                                                                        alt="一君_"
+                                                                                                        title="一君_">
+                                                                                                </div>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                        <div class="user-item__body">
+                                                                                            <div class="user-item__header">
+                                                                                                <a class="name"
+                                                                                                    href="https://my.oschina.net/u/4489239"
+                                                                                                    target="_blank"
+                                                                                                    title="一君_">一君_</a>
+                                                                                            </div>
+                                                                                            <div class="user-item__desc">
+                                                                                                如何养肥我家橘？</div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="panel-box panel-box--question-career">
+                                                                <div class="panel-content">
+                                                                    <div class="panel-content__column">
+                                                                        <div class="panel-header">
+                                                                            <div class="panel-header-title">
+                                                                                <a href="/question"
+                                                                                    title="技术问答">技术问答</a>
+                                                                            </div>
+                                                                            <a class="panel-header-link"
+                                                                                href="/question/ask"
+                                                                                title="我要提问">我要提问</a>
+                                                                        </div>
+
+                                                                        <div class="item-list">
+                                                                            <div class="item">
+                                                                                <a class="item-title item-title--highlight "
+                                                                                    href="https://www.oschina.net/question/4855753_2326898"
+                                                                                    target="_blank"
+                                                                                    title="高手问答第 292 期 —— 实时互动娱乐场景下如何提升RTC音频引擎音质">
+                                                                                    [顶] 高手问答第 292 期 ——
+                                                                                    实时互动娱乐场景下如何提升RTC音频引擎音质
+                                                                                </a>
+                                                                                <div class="item-extra">15回/2982阅</div>
+                                                                            </div>
+                                                                            <div class="item">
+                                                                                <a class="item-title item-title--highlight "
+                                                                                    href="https://www.oschina.net/question/2918182_2319406"
+                                                                                    target="_blank"
+                                                                                    title="如何在 OSC 社区运营你的开源项目？">
+                                                                                    [顶] 如何在 OSC 社区运营你的开源项目？
+                                                                                </a>
+                                                                                <div class="item-extra">63回/54389阅</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="panel-content__column">
+                                                                        <div class="panel-header">
+                                                                            <div class="panel-header-title"><a
+                                                                                    href="/question?catalog=1"
+                                                                                    title="摸鱼生涯">摸鱼生涯</a></div>
+                                                                            <a class="panel-header-link"
+                                                                                href="/group/fishfish"
+                                                                                title="摸鱼专区">查看更多</a>
+                                                                        </div>
+
+                                                                        <div class="item-list">
+                                                                            <div class="item">
+                                                                                <a class="item-title"
+                                                                                    href="https://www.oschina.net/p/ethereal-farm"
+                                                                                    target="_blank"
+                                                                                    title="空灵农场">空灵农场</a>
+                                                                                <div class="item-extra">6评/181653阅</div>
+                                                                            </div>
+                                                                            <div class="item">
+                                                                                <a class="item-title"
+                                                                                    href="https://www.oschina.net/p/yulegeyu"
+                                                                                    target="_blank"
+                                                                                    title="鱼了个鱼">鱼了个鱼</a>
+                                                                                <div class="item-extra">32评/13447阅</div>
+                                                                            </div>
+                                                                            <div class="item">
+                                                                                <a class="item-title"
+                                                                                    href="https://www.oschina.net/p/shop-idle"
+                                                                                    target="_blank"
+                                                                                    title="商店放置">商店放置</a>
+                                                                                <div class="item-extra">0评/3922阅</div>
+                                                                            </div>
+                                                                            <div class="item">
+                                                                                <a class="item-title"
+                                                                                    href="https://www.oschina.net/question/2720166_2326682"
+                                                                                    target="_blank"
+                                                                                    title="如何评价给代码“下毒”的 Evil.js？">如何评价给代码“下毒”的
+                                                                                    Evil.js？</a>
+                                                                                <div class="item-extra">36评/19764阅</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+
+
+
+                                                            <div class="panel-box panel-box--tools-jobs">
+                                                                <div class="panel-content">
+                                                                    <div class="panel-content__column tools-box">
+                                                                        <div class="panel-header">
+                                                                            <div class="panel-header-title"><a
+                                                                                    href="https://tool.oschina.net"
+                                                                                    title="在线工具">在线工具</a></div>
+                                                                            <a class="panel-header-link panel-header-link--gray"
+                                                                                href="https://tool.oschina.net"
+                                                                                title="更多在线工具" target="_blank">更多</a>
+                                                                        </div>
+                                                                        <div class="panel-content">
+                                                                            <div class="tool-items">
+                                                                                <div class="tool-items__inner">
+                                                                                    <div class="tool-item">
+                                                                                        <a class="tool-item__inner"
+                                                                                            target="_blank"
+                                                                                            href="https://tool.oschina.net/hexconvert/"
+                                                                                            title="进制转换器">
+                                                                                            <div
+                                                                                                class="tool-item__icon">
+                                                                                                <img src="https://static.oschina.net/new-osc/img/page/index-new/tool/tool-icon-binary.svg"
+                                                                                                    alt=""></div>
+                                                                                            <div
+                                                                                                class="tool-item__name">
+                                                                                                进制转换器</div>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                    <div class="tool-item">
+                                                                                        <a class="tool-item__inner"
+                                                                                            target="_blank"
+                                                                                            href="https://tool.oschina.net/regex/"
+                                                                                            title="正则表达式">
+                                                                                            <div
+                                                                                                class="tool-item__icon">
+                                                                                                <img src="https://static.oschina.net/new-osc/img/page/index-new/tool/tool-icon-regex.svg"
+                                                                                                    alt=""></div>
+                                                                                            <div
+                                                                                                class="tool-item__name">
+                                                                                                正则表达式</div>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="sidebar-box">
+                                                <div class="sidebar-box__inner">
+                                                    <div
+                                                        class="sidebar-section-list mb sidebar-section-list--compact box-card box-card--shadow">
+                                                        <div class="sidebar-section section-recomment-comment">
+                                                            <div class="section-header">
+                                                                <h3 class="section-title">精彩评论</h3>
+                                                                <div class="section-extra">
+                                                                    <div class="count-down">35s 后自动更新</div>
+                                                                    <div class="refresh-box" title="换一批">
+                                                                        <i class="oicon oicon-refresh"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="section-body">
+                                                                <div class="commnet-list scroll-cover">
+                                                                    <div class="event">
+                                                                        <div class="label">
+                                                                            <a href="https://my.oschina.net/Jiuyong"
+                                                                                title="程思" target="_blank">
+                                                                                <div class="osc-avatar small-portrait _20x20"
+                                                                                    title="程思" data-user-id="566335">
+                                                                                    <img src="https://www.oschina.net/new-osc/img/portrait.gif"
+                                                                                        alt="程思" title="程思">
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="content">
+                                                                            <div class="extra text"
+                                                                                data-emoji-render="">
+                                                                                <a href="https://www.oschina.net/news/211797/mozilla-claims-apple-google-and-microsoft?to=comment&amp;rpl=296269742"
+                                                                                    target="_blank">业界良心，说的都是实话，但是资本不会喜欢。
+                                                                                    资本可以通过交换利益，没有外力的情况下天生就是联合的。</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="ad-box ad-box--label" style="margin-bottom:24px">
+                                                        <a name="index_channel_list_ad_between_gitee"
+                                                            data-traceid="index_channel_list_ad_between_gitee"
+                                                            data-tracepid="index_channel_list_ad_between_gitee"
+                                                            href="https://github.com/milvus-io/milvus" target="_blank"
+                                                            title="">
+                                                            <img src="https://static.oschina.net/uploads/cooperation/index_channel_list_ad_between_gitee_HPoXK.jpg"
+                                                                width="325" height="250">
+                                                        </a>
+                                                    </div>
+
+                                                    <div
+                                                        class="sidebar-section-list mb sidebar-section-list--compact box-card box-card--shadow">
+                                                        <div class="sidebar-section section-gitee-recommend">
+                                                            <div class="section-header">
+                                                                <div class="section-icon"><i
+                                                                        class="oicon oicon-gitee-circle-solid"></i>
+                                                                </div>
+                                                                <h3 class="section-title">Gitee 最新推荐</h3>
+                                                                <div class="section-extra">
+                                                                    <a href="https://gitee.com/explore?utm_source=oschina&amp;utm_medium=link-mid&amp;utm_campaign=explore"
+                                                                        target="_blank" title="查看更多 Gitee 最新推荐"><i
+                                                                            class="oicon oicon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="section-body">
+                                                                <div class="simple-list">
+                                                                    <div class="simple-item">
+                                                                        <div class="simple-item__inner">
+                                                                            <div class="simple-item__header">
+                                                                                <h3
+                                                                                    class="simple-item__title simple-item__title--bold">
+                                                                                    <a href="https://gitee.com/MegEngine/MegEngine?utm_source=oschina&amp;utm_medium=link-mid&amp;utm_campaign=new_wh"
+                                                                                        target="_blank"
+                                                                                        title="MegEngine/MegEngine ">MegEngine/MegEngine
+                                                                                    </a></h3>
+                                                                                <div class="simple-item__extra"><span
+                                                                                        class="lang">C++</span></div>
+                                                                            </div>
+                                                                            <div class="simple-item__desc">MegEngine
+                                                                                是一个快速、可拓展、易于使用且支持自动求导的深度学习框架，具备训练推理一体、超低硬件门槛...
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div
+                                                        class="sidebar-section-list mb sidebar-section-list--compact box-card box-card--shadow">
+                                                        <div class="sidebar-section section-zb">
+                                                            <div class="section-header">
+                                                                <h3 class="section-title">接活赚钱，技术变现</h3>
+                                                                <div class="section-extra">
+                                                                    <a href="https://zb.oschina.net/" target="_blank"
+                                                                        title="查看更多项目"><i
+                                                                            class="oicon oicon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="section-body">
+                                                                <div class="simple-list">
+                                                                    <div class="simple-item">
+                                                                        <div class="simple-item__inner">
+                                                                            <div class="simple-item__header">
+                                                                                <h3 class="simple-item__title"><a
+                                                                                        href="https://zb.oschina.net/project/detail.html?id=14414846"
+                                                                                        target="_blank"
+                                                                                        title="游戏开发">游戏开发</a></h3>
+                                                                                <div class="simple-item__extra"><span
+                                                                                        class="money">￥100,000</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div
+                                                        class="sidebar-section-list sidebar-section-list--compact box-card box-card--shadow">
+                                                        <div class="sidebar-section section-project-weekly">
+                                                            <div class="section-header">
+                                                                <h3 class="section-title">每周软件推荐</h3>
+                                                                <div class="section-extra">
+                                                                    <a href="/project/weekly_projects" target="_blank"
+                                                                        title="查看更多软件推荐"><i
+                                                                            class="oicon oicon-arrow-right"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="section-body">
+                                                                <div class="simple-list">
+
+                                                                    <div class="simple-item">
+                                                                        <div class="simple-item__inner">
+                                                                            <div class="simple-item__header">
+                                                                                <h3 class="simple-item__title"><a
+                                                                                        href="https://www.oschina.net/p/tpu-mlir"
+                                                                                        target="_blank"
+                                                                                        title="TPU 编译器 TPU-MLIR"><span
+                                                                                            class="project-name">TPU-MLIR</span><span
+                                                                                            class="project-title">TPU
+                                                                                            编译器</span></a></h3>
+                                                                            </div>
+                                                                            <div class="simple-item__desc">TPU-MLIR
+                                                                                是一个专注于 AI 芯片的 TPU
+                                                                                编译器开源工程，提供了一套完整的工具链，可以将不同框架下预训练过的深度学习模型，转化为可以在
+                                                                                TPU 上运行的二进制文件 bmodel，从而实现更高效的推...</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <div id="footer" class="ui vertical footer segment mb-hide">
+            <div class="ui container">
+                <div class="ui grid">
+                    <div class="eight wide mobile three wide tablet two wide computer column">
+                        <h4 class="ui header">OSCHINA 社区</h4>
+                        <div class="ui link list">
+                            <a class="item" href="https://www.oschina.net/home/aboutosc" target="_blank">关于我们</a>
+                            <a class="item" href="https://www.oschina.net/home/aboutosc" target="_blank">联系我们</a>
+                            <a class="item" href="https://www.oschina.net/news/131099/oschina-hiring"
+                                target="_blank">加入我们</a>
+                            <a class="item" href="https://www.oschina.net/home/aboutosc#partners"
+                                target="_blank">合作伙伴</a>
+                            <a class="item" href="https://www.oschina.net/openapi" target="_blank">Open API</a>
+                        </div>
+                    </div>
+                    <div class="eight wide mobile four wide tablet three wide computer column">
+                        <h4 class="ui header">在线工具</h4>
+                        <div class="ui link list">
+                            <a class="item"
+                                href="https://gitee.com/?utm_source=oschina&amp;utm_medium=link-bottom&amp;utm_campaign=home"
+                                target="_blank">Gitee.com</a>
+                            <a class="item"
+                                href="https://gitee.com/enterprises?utm_source=oschina&amp;utm_medium=link-bottom&amp;utm_campaign=enterprises"
+                                target="_blank">企业研发管理</a>
+                            <a class="item"
+                                href="https://copycat.gitee.com/?utm_source=oschina&amp;utm_medium=link-bottom&amp;utm_campaign=copycat"
+                                target="_blank">CopyCat-代码克隆检测</a>
+                            <a class="item" href="https://tool.oschina.net" target="_blank">实用在线工具</a>
+                            <a class="item"
+                                href="https://oscimg.oschina.net/oscnet/up-82a1d21cdcbd86bf819ffd854dc0f1c6d72.png"
+                                target="_blank" style="color: #cc0000">国家反诈中心APP下载</a>
+                        </div>
+                    </div>
+                    <div class="eight wide mobile three wide tablet two wide computer column">
+                        <h4 class="ui header">攻略</h4>
+                        <div class="ui link list">
+                            <a class="item" href="https://www.oschina.net/question/2918182_2319406"
+                                target="_blank">项目运营</a>
+                            <a class="item" href="https://my.oschina.net/u/4252687/blog/5568509" target="_blank">Awesome
+                                软件（持续更新中）</a>
+                        </div>
+                    </div>
+                    <div class="center aligned eight wide mobile two wide tablet two wide computer column">
+                        <h4 class="ui header">QQ群</h4>
+                        <a href="https://jq.qq.com/?_wv=1027&amp;k=rfiPgVgE" target="_blank">
+                            <img class="qrcode" src="https://static.oschina.net/new-osc/img/qq_qrcode_2_new.png"
+                                alt="QQ交流群">
+                        </a>
+                        <div class="ui link list">
+                            <a class="item qrcode-des" href="https://jq.qq.com/?_wv=1027&amp;k=rfiPgVgE"
+                                target="_blank">530688128</a>
+                        </div>
+                    </div>
+                    <div class="center aligned eight wide mobile two wide tablet two wide computer column">
+                        <h4 class="ui header">公众号</h4>
+                        <img src="https://static.oschina.net/new-osc/img/wechat_qrcode.jpg?t=1484694603000" alt="微信公众号">
+                    </div>
+                    <div class="center aligned eight wide mobile two wide tablet two wide computer column">
+                        <h4 class="ui header">视频号</h4>
+                        <img src="https://oscimg.oschina.net/oscnet/up-7f546da372c31b5421fedc29f7c202ab2c4.JPEG"
+                            alt="视频号" style="width: 65px">
+                    </div>
+                    <div class="center aligned eight wide mobile five wide tablet three wide computer column tb-hide">
+                        <h3 class="ui header">OSCHINA 小程序</h3>
+                        <p>聚合全网技术文章，根据你的阅读喜好进行个性推荐</p>
+                        <div class="item download-item">
+                            <a class="ui primary button btnDownloadBottom" target="_blank">OSC小程序</a>
+                        </div>
+                        <div class="ui popup bottom center transition btnDownloadBottomContent hidden">
+                            <img width="200"
+                                src="https://oscimg.oschina.net/oscnet/up-91f008637a179c217fdec464b7bad202844.jpg"
+                                alt="OSC小程序">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            <div class="ui container">
+                <div class="ui clearing basic segment">
+                    <div class="ui left floated horizontal link list">
+                        <div class="item">©OSCHINA(OSChina.NET)</div>
+                        <div class="item mb-hide">工信部</div>
+                        <a class="item mb-hide" href="http://www.copu.org.cn/" target="_blank"
+                            title="开源软件推进联盟">开源软件推进联盟</a>
+                        <div class="item mb-hide">指定官方社区</div>
+                    </div>
+                    <div class="ui right floated horizontal link list">
+                        <div class="item mb-hide">深圳市奥思网络科技有限公司版权所有</div>
+                        <a href="http://beian.miit.gov.cn/" target="_blank" class="item">粤ICP备12009483号</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <style>
+        .codeBlock:hover .oscCode {
+            display: block !important;
+        }
+
+        .codeBlock {
+            z-index: 2;
+            position: fixed;
+            right: 20px;
+            bottom: 57px;
+            overflow: hidden;
+            margin-bottom: 4px;
+            padding: 8px 0 6px;
+            width: 40px;
+            height: auto;
+            box-sizing: content-box;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            background: #f5f5f5;
+            text-align: center;
+            transition: background 0.4s ease;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .codeBlock {
+                display: none;
+            }
+        }
+    </style>
+
+    <div class="codeBlock">
+        <img class="codeIcon" src="https://oscimg.oschina.net/oscnet/up-02f2706a81344119fb5cdcdda304068f2e0.png" alt="">
+        <img class="oscCode" style="display:none;position: fixed;bottom: 62px;right: 69px;width: 120px;"
+            src="https://oscimg.oschina.net/oscnet/up-e77d060131d9b392981650ec7beb614554f.JPEG" alt="">
+    </div>
+
+    <div class="back-to-top back-to-top-toggle" style="display: none;">
+        <div class="icon"><img src="https://static.oschina.net/new-osc/img/icon/back-to-top.svg" alt="返回顶部"></div>
+        <div class="text">顶部</div>
+    </div>
+    <script src="https://static.oschina.net/new-osc/js/utils/semantic-ui/semantic.min.js?t=1585021363000"></script>
+    <script src="https://static.oschina.net/new-osc/js/utils/vue.min.js?t=1585021363000"></script>
+    <script src="https://static.oschina.net/new-osc/js/utils/jweixin-1.6.0.js"></script>
+    <script src="https://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="https://static.oschina.net/new-osc/dist/js/web.579849e9.js"></script>
+    <script>
+        (function () {
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        _hmt.push(['_requirePlugin', 'UrlChangeTracker', {
+            shouldTrackUrlChange: function (newPath, oldPath) {
+                return newPath && oldPath;
+            }
+        }
+        ]);
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?a411c4d1664dd70048ee98afe7b28f0b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TK89C9ZD80"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-TK89C9ZD80');
+    </script>
+
+    <script>
+        window.goatcounter = {
+            path: function (p) { return location.host + p }
+        }
+    </script>
+    <script data-goatcounter="https://visit.oschina.net/count" async="" src="//visit.oschina.net/count.js"></script>
+
+    <script async="">
+            (function () {
+                var el = document.createElement("script");
+                el.src = "https://lf1-cdn-tos.bytegoofy.com/goofy/ttzz/push.js?2f2c965c87382dadf25633a3738875e5ccd132720338e03bf7e464e2ec709b9dfd9a9dcb5ced4d7780eb6f3bbd089073c2a6d54440560d63862bbf4ec01bba3a";
+                el.id = "ttzz";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(el, s);
+            })(window)
+    </script>
+
+
+
+    <div name="global_footer" data-traceid="global_footer" data-tracepid="global_footer">
+        <!-- global_footer -->
+
+        <script type="text/javascript">
+            // 动弹话题页面描述加链接
+            $(function () {
+                const el = $('.www-tweet .tweet-form-header .topic-desc');
+                if (el && el.length > 0) {
+                    const desc = el.html();
+                    el.html(desc.replace(/http(s?):\/\/[\w\d-.\/?=]+/, url => `<a href="${url}" target="_blank">${url}</a>`));
+                }
+            });
+        </script>
+    </div>
+
+
+    <!-- Generated by oschina (init:1[ms],page:276[ms],ip:223.243.188.183) //-->
+</body>
+
+</html>
