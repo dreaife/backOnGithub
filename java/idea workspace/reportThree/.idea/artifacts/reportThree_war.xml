@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="reportThree:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>reportThree</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="reportThree-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="reportThree:war exploded" />
+    </root>
+  </artifact>
+</component>
