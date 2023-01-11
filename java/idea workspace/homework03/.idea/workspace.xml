@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a17a17c3-ccfe-4a29-baaa-1be318310762" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../JavaWeb/xjuClass/reportThree/.idea/reportThree.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/.idea/junitgenerator-prj-settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_console/src/main/java/cn/wyk/controller/CalendarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_console/src/main/java/cn/wyk/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_console/src/main/java/cn/wyk/controller/ManageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_console/src/main/java/cn/wyk/util/ToXml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_console/src/main/webapp/manage/manage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_core/src/main/java/cn/wyk/dao/BaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_core/src/main/java/cn/wyk/dao/BillCateMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_core/src/main/java/cn/wyk/dao/BillMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_core/src/main/java/cn/wyk/dao/BilluserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_core/src/main/java/cn/wyk/model/Bill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_core/src/main/java/cn/wyk/model/BillCate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_core/src/main/java/cn/wyk/model/Billuser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_core/src/main/java/cn/wyk/query/BillCateQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_core/src/main/java/cn/wyk/query/BilluserQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_core/src/main/java/cn/wyk/service/BillCateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_core/src/main/java/cn/wyk/service/BillUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_core/src/main/java/cn/wyk/service/Impl/BillCateServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_core/src/main/java/cn/wyk/service/Impl/BillUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_core/src/main/resources/mapper/BillCateMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_core/src/main/resources/mapper/BillMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_core/src/main/resources/mapper/BilluserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bill_ssm/bill_core/src/test/java/cn/wyk/service/Impl/BaseServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework02/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework02/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework02/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework02/.idea/junitgenerator-prj-settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework02/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework02/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework02/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework02/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework02/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework02/src/main/java/demo/OutDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework02/src/main/java/demo/demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework02/src/main/java/demo/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework02/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework02/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework02/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/demo.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../cf/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../cf/.vscode/settings.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GiteeDefaultAccount">
+    <option name="defaultAccountId" value="15e6da65-9d7f-4ee7-899e-0b38a1485e88" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2IzieseFCGmLe4k223eX5v7R42W" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/codeS/backOnGithub/java/idea workspace/homework03/src/main/java/demo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "spring.configuration.checksum": "1eb7a6b037f35ea343ced11edfb3bd91",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\codeS\backOnGithub\java\idea workspace\homework03\src\main\java\demo" />
+      <recent name="D:\codeS\backOnGithub\java\idea workspace\homework03\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="test.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="homework03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="demo" />
+      <option name="MAIN_CLASS_NAME" value="demo.test" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.test.test01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="a17a17c3-ccfe-4a29-baaa-1be318310762" name="变更" comment="" />
+      <created>1671190911114</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671190911114</updated>
+      <workItem from="1671190912801" duration="736000" />
+      <workItem from="1671191747097" duration="272000" />
+      <workItem from="1671192049243" duration="111000" />
+      <workItem from="1671192642598" duration="1242000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
