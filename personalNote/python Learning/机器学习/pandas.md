@@ -573,8 +573,16 @@ data = {
 }
 df = pd.DataFrame(data, index = ["day1", "day2", "day3"])
 
-df['Date'] = pd.to_datetime(df['Date'])
+# 在新的python3中，下句会报错，需要加上format='mixed'明确格式混合可以正常运行
+# pd.to_datetime(df['Date'])
+df['Date'] = pd.to_datetime(df['Date'], format='mixed')
 print(df.to_string())
+```
+
+使用`astype`修改数据格式
+
+```python
+data['语文'].dropna(how='any').astype('int')
 ```
 
 ## 清洗错误数据
