@@ -6,6 +6,6 @@ using for daily codes back
 
 欢迎各位来我的[博客][1]游玩
 
-![](https://raw.githubusercontent.com/dreaife/PictureOfDreaife/main/picture/202112081934117.png?token=ARNBM5A3DSFCXVTSJMP3NT3BWCMII)
+![20240201175858](https://dreaife-1306766477.cos.ap-nanjing.myqcloud.com/20240201175858.png)
 
-[1]: http://dreaife.cc/
+[1]: http://note.dreaife.icu/
